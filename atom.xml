@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+  <title><![CDATA[惟妙惟肖]]></title>
+  <subtitle><![CDATA[To dream and to build, To fail and to succeed.]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://boxvv.com//"/>
+  <updated>2016-03-11T12:52:55.921Z</updated>
+  <id>http://boxvv.com//</id>
+  
+  <author>
+    <name><![CDATA[Box]]></name>
+    <email><![CDATA[scripthome@sina.com]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[python+Eclipse+pydev环境搭建]]></title>
+    <link href="http://boxvv.com/2016-03-11/Python-Eclipse-pydev.html"/>
+    <id>http://boxvv.com/2016-03-11/Python-Eclipse-pydev.html</id>
+    <published>2016-03-11T12:52:55.000Z</published>
+    <updated>2016-03-11T12:52:55.921Z</updated>
+    <content type="html"><![CDATA[<p>本文重点介绍使用Eclipse+pydev插件来写Python代码，  以及在Mac上配置Eclipse+Pydev 和Windows配置Eclipse+Pydev <img src="/images/python/python.png" class="img-logo"><a id="more"></a></p>
+<h3 id="编辑器：Python_自带的_IDLE">编辑器：Python 自带的 IDLE</h3><p>简单快捷， 学习Python或者编写小型软件的时候。非常有用。</p>
+<h3 id="编辑器:_Eclipse_+_pydev插件">编辑器: Eclipse + pydev插件</h3><ol>
+<li><p>Eclipse是写JAVA的IDE， 这样就可以通用了,学习代价小。  学会了Eclipse, 以后写Python或者JAVA 都可以。</p>
+</li>
+<li><p>Eclipse, 功能强大。</p>
+</li>
+<li><p>Eclipse跨平台， 可以在Mac上和Windows运行</p>
+</li>
+</ol>
+<h4 id="安装Python">安装Python</h4><p>下载地址：<a href="http://www.python.org/" target="_blank" rel="external">http://www.python.org/</a></p>
+<p>Python 有 Python 2 和 Python 3 两个版本。  语法有些区别。  保险起见, 我安装Python 2.7.6</p>
+<h4 id="安装JAVA_JDK">安装JAVA JDK</h4><p>下载地址：<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+<p>Eclipse 需要这个安装好JAVA JDK后才能运行</p>
+<h4 id="下载Eclipse">下载Eclipse</h4><p>下载地址：<a href="http://www.eclipse.org/downloads/" target="_blank" rel="external">http://www.eclipse.org/downloads/</a></p>
+<p>下载完后，解压就可以直接使用，  Eclipse不需要安装。</p>
+<h4 id="pydev插件介绍">pydev插件介绍</h4><p>pydev插件的官方网站: <a href="http://www.pydev.org/" target="_blank" rel="external">http://www.pydev.org/</a>（不需要下载）</p>
+<h4 id="在Eclipse中安装pydev插件">在Eclipse中安装pydev插件</h4><p>启动Eclipse, 点击Help-&gt;Install New Software…   在弹出的对话框中，点Add 按钮。  Name中填:Pydev,  Location中填<a href="http://pydev.org/updates，然后一步一步装下去。" target="_blank" rel="external">http://pydev.org/updates，然后一步一步装下去。</a>  如果装的过程中，报错了。 就重新装。</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1t78jqqiej30d905bwex.jpg" alt=""></p>
+<p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1t78lxgqoj30lh0i0414.jpg" alt=""></p>
+<h4 id="配置pydev解释器">配置pydev解释器</h4><p>安装好pydev后， 需要配置Python解释器。</p>
+<p>在Eclipse菜单栏中，点击Windows -&gt;Preferences.   </p>
+<p>在对话框中，点击pyDev-&gt;Interpreter - Python.  点击New按钮， 选择python.exe的路径, 打开后显示出一个包含很多复选框的窗口. 点OK</p>
+<p>如果是Mac系统， 点击“Auto Config” 按钮</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f1t78og38mj30m00i3tbt.jpg" alt=""></p>
+<h4 id="开始写代码">开始写代码</h4><p>启动Eclipse,  创建一个新的项目,   File-&gt;New-&gt;Projects…   选择PyDev-&gt;PyDevProject 输入项目名称.</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1t78pinkqj30el0hmmz9.jpg" alt=""></p>
+<p>新建 pyDev Package. 就可以写代码了。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f1t78qrq4sj30kv0a2q4a.jpg" alt=""></p>
+<p>输入包名，这里输入Test1</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f1t78rz6nyj30o60h5gpc.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本文重点介绍使用Eclipse+pydev插件来写Python代码，  以及在Mac上配置Eclipse+Pydev 和Windows配置Eclipse+Pydev <img src="/images/python/python.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="Eclipse" scheme="http://boxvv.com/tags/Eclipse/"/>
+    
+      <category term="pydev" scheme="http://boxvv.com/tags/pydev/"/>
+    
+      <category term="python" scheme="http://boxvv.com/tags/python/"/>
+    
+      <category term="脚本开发" scheme="http://boxvv.com/categories/%E8%84%9A%E6%9C%AC%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[如果编程语言是女人]]></title>
+    <link href="http://boxvv.com/2016-03-08/if-programming-languages-are-woman.html"/>
+    <id>http://boxvv.com/2016-03-08/if-programming-languages-are-woman.html</id>
+    <published>2016-03-07T16:04:27.000Z</published>
+    <updated>2016-03-11T12:54:28.701Z</updated>
+    <content type="html"><![CDATA[<p>假如编程语言是女人 你中意哪一个？<img src="/images/ProgramLife/rubiks-cube.png" class="img-logo"><a id="more"></a></p>
+<p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f1oqhywcixj30fk09lta8.jpg" alt=""></p>
+<h4 id="PHP">PHP</h4><p>PHP是你的豆蔻年华的心上人，她是情窦初开的你今年夏天傻乎乎的追求的目标。玩一玩可以，但千万不要投入过深，因为这个女孩有严重的问题。</p>
+<h4 id="Perl">Perl</h4><p>Perl 是PHP的姐姐。她对你来说年龄稍微大了一点，但在90年代，她是相当受欢迎的。她和Larry Wall(译注：Perl语言创始人)长期保持着亲密关系，因此她的审美一落千丈，如今她看起来是丑陋不堪。“无论你们怎么评论，我仍然爱她！”，Larry Wall说。没有第二个人会像他这样。</p>
+<h4 id="Ruby">Ruby</h4><p>Ruby是脚本家族中一个非常漂亮的孩子。第一眼看她，你的心魄就会被她的美丽摄走。她还很有有趣。起初她看起来有点慢，不怎么稳定，但近些年来她已经成熟了很多。</p>
+<h4 id="Python">Python</h4><p>Python 是Ruby的一个更懂事的姐姐。她优雅，新潮，成熟。她也许太过优秀。很多小伙都会说“嘿，兄弟，你怎么可能不爱上Python呢！？”。没错，你喜欢Python。你把她当成了一个脾气和浪漫都退烧了的Ruby。</p>
+<h4 id="Java">Java</h4><p>Java是一个事业成功的女人。很多在她手下干过的人都感觉她的能力跟她的地位并不般配，她更多的是通过技巧打动了中层管理人员。你也许会认为她是很有智慧的人，你愿意跟随她。但你要准备好在数年里不断的听到“你用错了接口，你遗漏了一个分号”这样的责备。</p>
+<h4 id="C++">C++</h4><p>C++ 是Java的表姐。她在很多地方跟Java类似，不同的是她成长于一个天真的年代，不认为需要使用“保护措施”。当然，“保护措施”是指自动内存管理。你以为我指的是什么？</p>
+<h4 id="C">C</h4><p>C 是C++的妈妈。对一些头发花白的老程序员说起这个名称，会让他们眼睛一亮，产生无限回忆。</p>
+<p><strong>Objective C</strong> C语言家族的另外一个成员。她加入了一个奇怪的教会，不愿意和任何教会之外的人约会。</p>
+<h4 id="Haskell,_Clojure,_Scheme">Haskell, Clojure, Scheme</h4><p>Haskell, Clojure, Scheme 以及她们的朋友们都是一些时髦的，附庸风雅的，很聪明的女孩，你也许在多年前和她们曾度过了一个很Happy的暑假。她们是第一次让你感到有压力的女孩。当然，你可能从来没有对她们很认真——尽管你总是在问自己“如果….会如何？”</p>
+<h4 id="C-1">C</h4><p>也许你会拖延着不去认识C# ，因为她们家族不好的名声。但最近几年他们已经改邪归正了——他们会这样告诉你。一旦你加入我们，你就是我们的人了，你听到了没有？你需要一个数据库？她的哥哥MSSQL会罩着你。需要一个安身的地方？这有何难，她老爸甚至可以在Azure大道你给买一套公寓。什么？你觉得这样的关系过于亲密了？不，你别想离开我们。你已经是我们家族的一员了，现在，听见了没有？</p>
+<h4 id="Javascript">Javascript</h4><p>Javascript —— 嗨，这不是你的初吻的那个女孩吗，她甚至比PHP更早进入你的视线。我不知道她现在在干什么。我听说她的事业近几年来非常成功。旧时的人也可以赶上潮流变得很酷….（你发现她从头到脚穿的都是设计师jQuery的作品）….哇，有人从丑小鸭变成了美丽的天鹅…</p>
+<p>[英文原文：<a href="http://www.quora.com/Programming-Languages/In-laymans-terms-what-are-the-major-programming-languages-and-what-are-they-used-for" target="_blank" rel="external">what are the major programming languages</a> ]</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>假如编程语言是女人 你中意哪一个？<img src="/images/ProgramLife/rubiks-cube.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="C++" scheme="http://boxvv.com/tags/C/"/>
+    
+      <category term="java" scheme="http://boxvv.com/tags/java/"/>
+    
+      <category term="python" scheme="http://boxvv.com/tags/python/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[乔布斯的15句经典名言让你找到工作生活灵感!]]></title>
+    <link href="http://boxvv.com/2016-02-29/Jobs-Yulu.html"/>
+    <id>http://boxvv.com/2016-02-29/Jobs-Yulu.html</id>
+    <published>2016-02-29T15:16:36.000Z</published>
+    <updated>2016-02-29T15:32:31.145Z</updated>
+    <content type="html"><![CDATA[<p>苹果创始人&amp;前CEO 乔布斯流下了巨大的遗产。 他对质量的追求到了残酷无情的地步，他取得了令人难以置信的成功。 如果你正在寻找一些灵感，这里有一些乔布斯说过的最发人深省的话。<img src="/images/ProgramLife/rubiks-cube.png" class="img-logo"><a id="more"></a></p>
+<p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f1glx6389kj30hq0db750.jpg" alt=""></p>
+<p>苹果创始人&amp;前CEO  乔布斯流下了巨大的遗产。</p>
+<p>他对质量的追求到了残酷无情的地步，他取得了令人难以置信的成功。</p>
+<p>前天（2016年2月24日）是他 61 岁生日。</p>
+<p>如果你正在寻找一些灵感，这里有一些乔布斯说过的最发人深省的话。</p>
+<h4 id="“记住，每个人终将会死去，这是我认为能够避免个人患得患失的最好方式，你已经赤裸裸地面对死亡，那就没有什么理由不去追随自己的心。">“记住，每个人终将会死去，这是我认为能够避免个人患得患失的最好方式，你已经赤裸裸地面对死亡，那就没有什么理由不去追随自己的心。</h4><p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f1glx6xykij30hq0dq759.jpg" alt=""></p>
+<h4 id="“靠用户调查来设计产品太难。很多时候，要等到你把产品摆在面前，用户才知道想要什么。”">“靠用户调查来设计产品太难。很多时候，要等到你把产品摆在面前，用户才知道想要什么。”</h4><p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f1glx7sgnaj30hq0dqgm0.jpg" alt=""></p>
+<h4 id="“这一直是我的一个座右铭——专注和简单。简单，可以比实现复杂的东西更难。你必须花很多力气去让你的思维变得简单、有条理。”">“这一直是我的一个座右铭——专注和简单。简单，可以比实现复杂的东西更难。你必须花很多力气去让你的思维变得简单、有条理。”</h4><p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1glx8i9gjj30hq0dbwf5.jpg" alt=""></p>
+<h4 id="“你在向前展望的时候不可能将这些片断串连起来；你只能在回顾的时候将点点滴滴串连起来。所以你必须相信这些片断会在你未来的某一天串连起来。你必须要相信某些东西：你的勇气、目的、生命、因缘。这个过程从来没有令我失望,只是让我的生命更加地与众不同而已。”">“你在向前展望的时候不可能将这些片断串连起来；你只能在回顾的时候将点点滴滴串连起来。所以你必须相信这些片断会在你未来的某一天串连起来。你必须要相信某些东西：你的勇气、目的、生命、因缘。这个过程从来没有令我失望,只是让我的生命更加地与众不同而已。”</h4><p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f1glx9mkuaj30hq0c9mxw.jpg" alt=""></p>
+<h4 id="“你的工作将会占据生活中很大的一部分。你只有相信自己所做的是伟大的工作,_你才能怡然自得。如果你现在还没有找到，那么继续找、不要停下来、全心全意的去找，当你找到的时候你就会知道的。就像任何真诚的关系，随着岁月的流逝只会越来越紧密。所以继续找，直到你找到它，不要停下来。”">“你的工作将会占据生活中很大的一部分。你只有相信自己所做的是伟大的工作, 你才能怡然自得。如果你现在还没有找到，那么继续找、不要停下来、全心全意的去找，当你找到的时候你就会知道的。就像任何真诚的关系，随着岁月的流逝只会越来越紧密。所以继续找，直到你找到它，不要停下来。”</h4><p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1glxa6v7lj30hq0btmxh.jpg" alt=""></p>
+<h4 id="“成为墓地中最有钱的死人对我一点意义都没有，在入睡时能够说我们曾做过精彩的事情，那对我才有意义。”">“成为墓地中最有钱的死人对我一点意义都没有，在入睡时能够说我们曾做过精彩的事情，那对我才有意义。”</h4><p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f1glxazytfj30hq0cjwes.jpg" alt=""></p>
+<h4 id="“我想如果你做了某些事，结果顺利圆满，那么你应该选择转去做别的事情，别专注在美好的事情上太久，要不断寻找下一个目标。”">“我想如果你做了某些事，结果顺利圆满，那么你应该选择转去做别的事情，别专注在美好的事情上太久，要不断寻找下一个目标。”</h4><p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f1glxceu4ej30hq0bngmx.jpg" alt=""></p>
+<h4 id="“创新来自于人们在走廊里偶然遇到，或者晚上10点半想到了一个新主意而互相打电话，或者因为他们意识到了有办法可以解决一个总在困扰我们的问题。创新就是一个人认为他想出了最酷的东西，想知道其他人怎么看，而召集六个人开临时会议。”">“创新来自于人们在走廊里偶然遇到，或者晚上10点半想到了一个新主意而互相打电话，或者因为他们意识到了有办法可以解决一个总在困扰我们的问题。创新就是一个人认为他想出了最酷的东西，想知道其他人怎么看，而召集六个人开临时会议。”</h4><p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f1glxcybrqj30hq0c8aaj.jpg" alt=""></p>
+<h4 id="“被苹果公司炒鱿鱼是我人生中最好的一件事，追求成功的沉重被创业者的轻松感觉所取代，这让我感觉如此自由，我重新进入人生中一个最有创造力的阶段。”">“被苹果公司炒鱿鱼是我人生中最好的一件事，追求成功的沉重被创业者的轻松感觉所取代，这让我感觉如此自由，我重新进入人生中一个最有创造力的阶段。”</h4><p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f1glxdn8erj30hq0da0t4.jpg" alt=""></p>
+<h4 id="“我曾在_17_岁时读过这么一句名言：‘如果你把每一天当成自己人生的最后一天来过，那么将来某一天你会明白其中的真谛’，这句话令我印象深刻，此后的_33_年来，我每天早上都会对着镜子自问：‘如果今天是我生命的最后一天，我还会想去做我今天要去做的事吗?’，每当我心里的答案是‘不’时，我知道自己需要做出改变了。”">“我曾在 17 岁时读过这么一句名言：‘如果你把每一天当成自己人生的最后一天来过，那么将来某一天你会明白其中的真谛’，这句话令我印象深刻，此后的 33 年来，我每天早上都会对着镜子自问：‘如果今天是我生命的最后一天，我还会想去做我今天要去做的事吗?’，每当我心里的答案是‘不’时，我知道自己需要做出改变了。”</h4><p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f1glxgj775j30hq0da40p.jpg" alt=""></p>
+<h4 id="“我希望可以在宇宙中安装一口警钟。”">“我希望可以在宇宙中安装一口警钟。”</h4><p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f1glxii1chj30hq0hqn0m.jpg" alt=""></p>
+<h4 id="“领导者和追随者最大的区别在于创新。”">“领导者和追随者最大的区别在于创新。”</h4><p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1glxjb9zrj30hq0dagm6.jpg" alt=""></p>
+<h4 id="“我的商业模式是披头士那种模式。这四个家伙互相之间检查是否有消极的趋势。他们能够平衡彼此，让总体大于部分之和。这就是我对经营的看法：伟大的业务绝不会是由某一个人完成的。它们是由一组人来完成。”">“我的商业模式是披头士那种模式。这四个家伙互相之间检查是否有消极的趋势。他们能够平衡彼此，让总体大于部分之和。这就是我对经营的看法：伟大的业务绝不会是由某一个人完成的。它们是由一组人来完成。”</h4><p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1glxkannej30hq0czq3t.jpg" alt=""></p>
+<h4 id="“当海盗，不要当海军。”">“当海盗，不要当海军。”</h4><p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1glxldbryj30hq0dadh0.jpg" alt=""></p>
+<h4 id="当你创新时，难免会犯错。最好的做法是快速承认错误，然后着手改善其他的想法。">当你创新时，难免会犯错。最好的做法是快速承认错误，然后着手改善其他的想法。</h4><p><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f1glxmeitij30hq0da0tp.jpg" alt=""></p>
+<hr>
+<p><strong><em>本文内容来源于网络</em></strong></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>苹果创始人&amp;前CEO 乔布斯流下了巨大的遗产。 他对质量的追求到了残酷无情的地步，他取得了令人难以置信的成功。 如果你正在寻找一些灵感，这里有一些乔布斯说过的最发人深省的话。<img src="/images/ProgramLife/rubiks-cube.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="Apple" scheme="http://boxvv.com/tags/Apple/"/>
+    
+      <category term="Jobs" scheme="http://boxvv.com/tags/Jobs/"/>
+    
+      <category term="励志" scheme="http://boxvv.com/tags/%E5%8A%B1%E5%BF%97/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JSON 字符串 对象 互转]]></title>
+    <link href="http://boxvv.com/2016-02-25/PHP-JSON-EX.html"/>
+    <id>http://boxvv.com/2016-02-25/PHP-JSON-EX.html</id>
+    <published>2016-02-25T15:35:37.000Z</published>
+    <updated>2016-02-25T15:50:33.589Z</updated>
+    <content type="html"><![CDATA[<p>json对象，json字符串，不注意的话，很容易忽视混淆。例举几个容易混的情况。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
+<p>1，php将变量放到input框中，通过js去读取出来的是json字符串，要想使用就要将json字段串转成json对象</p>
+<p>2，ajax返回json数据，如果请求没有设置dataType为json，这个时候得到也是json字符串</p>
+<p>3，通过js改变input的value值，如果直接json对象，赋值的话，用开发者工具看到的值会是这样的，[Object Object]</p>
+<h3 id="json字符串，json对象区别">json字符串，json对象区别</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> aa = <span class="string">'&#123;"test":1,"test1":2&#125;'</span>;  </span><br><span class="line"><span class="keyword">var</span> bb = &#123;<span class="string">"test"</span>:<span class="number">1</span>,<span class="string">"test1"</span>:<span class="number">2</span>&#125;;  </span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(bb);   <span class="comment">//结果为 Object &#123; test=1,  test1=2&#125;  </span></span><br><span class="line"><span class="built_in">console</span>.log(aa);   <span class="comment">//结果为 &#123;"test":1,"test1":2&#125; </span></span><br><span class="line"><span class="comment">//区别就是，一个是对象，一个是字符串。</span></span><br></pre></td></tr></table></figure>
+<h3 id="json字符串转json对象">json字符串转json对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="built_in">eval</span>(<span class="string">'('</span> + aa + <span class="string">')'</span>);  <span class="comment">//方法1  </span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="built_in">JSON</span>.parse(aa);  <span class="comment">//方法2</span></span><br></pre></td></tr></table></figure>
+<h3 id="json对象转json字符串">json对象转json字符串</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> last=JSON.stringify(obj);</span><br></pre></td></tr></table></figure>
+<p>上面的转换，只加载jquery</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>json对象，json字符串，不注意的话，很容易忽视混淆。例举几个容易混的情况。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="JSON" scheme="http://boxvv.com/tags/JSON/"/>
+    
+      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[php解析http获取的json字符串变量总是空白null]]></title>
+    <link href="http://boxvv.com/2016-02-25/PHP-JSON.html"/>
+    <id>http://boxvv.com/2016-02-25/PHP-JSON.html</id>
+    <published>2016-02-25T15:35:37.000Z</published>
+    <updated>2016-02-25T15:42:21.251Z</updated>
+    <content type="html"><![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
+<p>直接把结果字符串复制出来手动创建一个变量却正常，在前端js也能解析，搞了半天不得其解，借助强大的谷歌解决了问题，答案是接口吐出的结果包含有BOM头。</p>
+<p>有3种解决办法：</p>
+<h3 id="第一种解决办法">第一种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"UTF-8"</span>,<span class="string">"GBK//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"GBK"</span>,<span class="string">"UTF-8//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br></pre></td></tr></table></figure>
+<h3 id="第二种解决办法">第二种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = trim(<span class="variable">$result</span>, <span class="string">"\xEF\xBB\xBF"</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br><span class="line"><span class="keyword">exit</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="第三种解决办法">第三种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (substr(<span class="variable">$return</span>, <span class="number">0</span>,<span class="number">3</span>) == pack(<span class="string">"CCC"</span>,<span class="number">0xef</span>,<span class="number">0xbb</span>,<span class="number">0xbf</span>)) &#123;</span><br><span class="line">  <span class="variable">$return</span> = substr(<span class="variable">$return</span>, <span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$data</span> = json_decode(<span class="variable">$return</span>,<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="JSON" scheme="http://boxvv.com/tags/JSON/"/>
+    
+      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[强制不使用“兼容性视图”的HTML代码]]></title>
+    <link href="http://boxvv.com/2016-02-25/Html-IE-Compatible.html"/>
+    <id>http://boxvv.com/2016-02-25/Html-IE-Compatible.html</id>
+    <published>2016-02-25T15:22:18.000Z</published>
+    <updated>2016-02-25T16:42:17.136Z</updated>
+    <content type="html"><![CDATA[<p>在IE8浏览器以后版本，都有一个“兼容性视图”，让不少新技术无法使用。那么如何禁止浏览器自动选择“兼容性视图”，强制IE以最高级别的可用模式显示内容呢？下面就介绍一段HTML代码。<img src="/images/JavaScript/html.png" class="img-logo"><a id="more"></a></p>
+<h3 id="IE浏览器兼容模式的属性介绍">IE浏览器兼容模式的属性介绍</h3><p><code>X-UA-Compatible</code>是一个设置IE浏览器兼容模式的属性，在IE8浏览器之后诞生。IE8或者IE9有很多种模式，比如，IE8有4种模式：IE5.5怪异模式、IE7标准模式、IE8几乎标准模式、IE8标准模式；而IE9有7种模式: IE5.5怪异模式、IE7标准模式、IE8几乎标准模式、IE8标准模式、IE9几乎标准模式、IE9标准模式、XML模式。</p>
+<h3 id="HTML代码">HTML代码</h3><h4 id="开启IE8的标准渲染模式">开启IE8的标准渲染模式</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=8"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这种方式在只存在IE8浏览器的时候比较合适，但是后来又出现了IE9、IE10、IE11等等。</p>
+<h4 id="融合多个浏览器版本">融合多个浏览器版本</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=9;IE=8;IE=7;"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>意思就是优先最前面的IE9，没IE9就用IE8。那么如果针对每一种都写一遍，似乎就有些冗余了。</p>
+<h4 id="Edge模式">Edge模式</h4><p>所以我们改变方式采用代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"edge"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>Edge模式通知IE以最高级别的可用模式显示内容，这实际上破坏了“锁定”模式。</p>
+<p>当然，我们还见过这样的代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=edge,chrome=1"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>就是增加了<code>chrome=1</code>值，目的是触发Google Chrome Frame，不过现在Google已经抛弃Google Chrome Frame了，因此也不用这样写了。</p>
+<h3 id="总结">总结</h3><p>在 &lt;!DOCTYPE html&gt; 下，使用代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"edge"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>触发标准模式，这个是最有效的方法。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在IE8浏览器以后版本，都有一个“兼容性视图”，让不少新技术无法使用。那么如何禁止浏览器自动选择“兼容性视图”，强制IE以最高级别的可用模式显示内容呢？下面就介绍一段HTML代码。<img src="/images/JavaScript/html.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://boxvv.com/tags/HTML/"/>
+    
+      <category term="兼容视图" scheme="http://boxvv.com/tags/%E5%85%BC%E5%AE%B9%E8%A7%86%E5%9B%BE/"/>
+    
+      <category term="技术文章" scheme="http://boxvv.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[红包之夜 马云在无声中赢了什么？]]></title>
+    <link href="http://boxvv.com/2016-02-14/HB-2016.html"/>
+    <id>http://boxvv.com/2016-02-14/HB-2016.html</id>
+    <published>2016-02-14T14:13:47.000Z</published>
+    <updated>2016-02-14T14:29:22.011Z</updated>
+    <content type="html"><![CDATA[<p>一场没有硝烟的战役，谁是真正赢家<img src="/images/JavaScript/alipay.png" class="img-logo"><a id="more"></a></p>
+<p><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f0z7uzgsmsj30at06i77i.jpg" class="img-center"><br>丙申年，2016的除夕夜。</p>
+<p>由羊入猴，这是每十二年必有一次的传统。可是，今年的改变却似乎有点大。当除夕夜的主旋律由春晚转向红包盛宴，当午夜钟响前的吉祥话变成了：求赐敬业福。这个羊年的最后一夜，似乎透露着很多不同寻常。</p>
+<p>首先，支付宝的五福临门，成功打破了去年除夕夜微信红包的垄断地位。尽管，最后的大奖揭晓后，很多人因错失敬业福，而愤愤不平。但不可否认的是，五福临门的新意，极大程度上超越了微信红包的可玩性和互动性。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f0z7uy7mz0j30dw07qaaa.jpg" class="img-center"></p>
+<p>其次，移动互联网走到今天。无论是移动终端的保有量，还是各种移动应用的普及性和用户粘性都已经到达了一个新的高峰。可以预见的是，在未来类似红包之夜、双11、12306或者是秒杀等高压力的应用场景将会成为一种常态，这会是传统IT架构向互联网架构转型的最大推手。</p>
+<p>从这两个出发点，再回头看支付宝的后发制人，也许会让我们有一些不同的理解。</p>
+<h3 id="红包之夜，在无声中发生了些什么？">红包之夜，在无声中发生了些什么？</h3><p>除夕当晚，所有人的关注点，都集中在有没有拿到敬业福，如何去平分史上最高的2.15亿红包奖金。这时候，大家都忽略了一个事实，我们共同创造了一个新的世界纪录：累计3245亿次的点击，最高峰值达到了每分钟210亿次。</p>
+<p>取代了微信成为今年春晚官方红包提供商的支付宝，成功将双11的经验积累平移到春晚红包。阿里云作为技术后台，再一次波澜不惊的打了一场没有硝烟的战争。</p>
+<p>根据支付宝放出的官方数据显示，前两轮咻一咻累计互动次数达到3245亿次，是去年春晚互动的29.5倍。这意味着，支付宝的后台承受的压力要比去年提高29.5倍。但是这个令人惊讶的数字诞生之时，并没有让任何一个用户产生卡顿和延迟。</p>
+<p>所以说，真正完美的技术，就是润物细无声。这非常符合马云在整个2015年一直在各种公开场合所倡导的，云计算像水和电一样，随需取用。</p>
+<p>春晚的红包大战，归根结底是一场检验云计算水平的无声战争，而决定一场战争的胜负手，一方面是临场的战斗指挥，更重要的则是战前的准备和武力的积累。</p>
+<p>从阿里云的角度看，每年的双11都是一次“战备试炼”。从2015年双11公布的数据看，阿里巴巴的系统中，订单创建峰值能力突破了每秒钟14万笔，支付宝的支付峰值达到了每秒8.59万笔。相比2009年的数字，“双11”订单创建峰值增长了350倍，支付峰值增长了430倍。</p>
+<p>连续6年的双11备战，让阿里云积累了在飞机飞行途中换引擎的能力。春晚红包的漂亮一役，正是得益于阿里云在连续的双11备战中，磨砺了自身所形成的战斗力。</p>
+<p>与此同时，阿里云正在输出这些经过积累的技术，打造各行各业的双11。比如2016年元旦的芒果TV跨年晚会，在面对仅有2周准备期的直播需求，阿里云迅速形成解决方案，全面支持了芒果台跨年晚会收视夺冠。</p>
+<p>某种意义上讲，在今天这个互联网时代，跨年晚会就是电视台们的双11；春晚红包，就是除夕夜全民互动平台的双11，在我们的生活当中，还有许许多多的双11，比如春运期间就是12306的双11等。</p>
+<p>越来越多的“双11”，让云计算真正成为一种常态，让红包大战变成了一种常态，这会不会是一场新的革命呢？</p>
+<h3 id="红包大战的常态化_代表着一场真正的革命">红包大战的常态化 代表着一场真正的革命</h3><p>这其实就是一次云计算的革命，更是一次计算的革命。</p>
+<p>马云在2015年做全年回顾时谈到：“2019到2021年，阿里云将扮演主角。阿里云的目标是和水、电一起，成为21世纪三大要素。”</p>
+<p>这其实，就是IT架构的革命。万物互联的时代刚刚处于“人联网”时期，当“电视联网”、“冰箱联网”甚至“猪联网”形成真正的物联网时代，今天面对的数据高并发将会成为日常流量。今天我们经历的流量洪峰，在未来就是一种常态。</p>
+<p>今天的云计算的一切技术特征：高弹性、扩展性，安全性在未来都会是日常的配置。这是决定物联网能否最终实现的关键。</p>
+<p>在我看来，春晚的红包大战正在让马云的未来世界更快的到来。今年的支付宝春晚红包互动相比去年提高了29.5倍。而2015年的双11峰值则比6年前的双11提高了430倍。这种对系统后台压力增长的速度，是几何级数的。</p>
+<p>对应流量的高增长，云计算技术的发展也必须是几何级数的。以阿里云为例，每年的技术突破都是领先于时代的。</p>
+<p>首先，2015年的双11，阿里首次启动了异地多活，让分布在多地的数据中心像一个数据中心一样工作，实现了系统弹性的最大化。</p>
+<p>其次，在芒果跨年晚会直播上采用的CDN解决方案，检验了阿里云凭借遍布全球超过5000个CDN节点的高质量，保证了内容分发的高用户体验。</p>
+<p>最重要的，则是对应大流量冲击的混合云架构，这成为了春晚红包的最大技术保证。阿里云护航小组组长何云飞说，“我们复制以往的经验，快速、灵活的构建了可以应对大流量冲击的混合云架构。同时，针对抢红包、拜年等业务场景，提供了多项技术方案，让大家能够玩的更爽”。</p>
+<p>这种经验源自2015年双11。阿里巴巴把淘宝天猫核心交易链条和支付宝核心支付链条的部分流量，直接切换到阿里云的公共云计算平台上，并形成了一场全球最大规模的混合云弹性架构实践。</p>
+<p>混合云架构的最大特点是灵活部署，既能利用公共云近乎无限的弹性计算能力，同时也能确保原有的IT设备继续发挥价值。在除夕夜里，除了春晚红包之外，微博也同样选择了阿里云提供的混合云解决方案，在微博发生总次数超过8亿次抢红包中，毫无延迟和顿挫感。</p>
+<p>可以说，正是有了这些云计算技术的试炼场，让阿里云能够在不同的应用场景中提供最合适的解决方案。同时，这些复杂的应用场景也促进了阿里云技术的不断突破。</p>
+<p>所以，毫无疑问，面对未来IT架构的革命，阿里云就是马云的底气。在红包之夜，马云真正赢得的其实是未来。</p>
+<hr>
+<p><strong>版权声明</strong></p>
+<ul>
+<li>本文转自 <a href="http://zhengkai.baijia.baidu.com/article/319129" target="_blank" rel="external">http://zhengkai.baijia.baidu.com/article/319129</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一场没有硝烟的战役，谁是真正赢家<img src="/images/JavaScript/alipay.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="五福" scheme="http://boxvv.com/tags/%E4%BA%94%E7%A6%8F/"/>
+    
+      <category term="支付宝" scheme="http://boxvv.com/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/"/>
+    
+      <category term="红包" scheme="http://boxvv.com/tags/%E7%BA%A2%E5%8C%85/"/>
+    
+      <category term="行业资讯" scheme="http://boxvv.com/categories/%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2016 新年新气象]]></title>
+    <link href="http://boxvv.com/2016-02-06/HappyNewYear2016.html"/>
+    <id>http://boxvv.com/2016-02-06/HappyNewYear2016.html</id>
+    <published>2016-02-06T08:09:21.000Z</published>
+    <updated>2016-02-06T08:20:37.012Z</updated>
+    <content type="html"><![CDATA[<p>时光飞逝，转眼间进入新的一年2016~，在这里，给大家拜年啦，祝大家新年快乐，心想事成！<img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f0pabkdroyj303k03k0t0.jpg" class="img-logo"><a id="more"></a><br><img src="/images/Other/happy-newyear.png" height="300" width="200"><br>新年啦，也要给自己定个目标，希望自己在新的一年里学得充实，工作顺心！~</p>
+<h3 id="工作方面">工作方面</h3><blockquote>
+<p>1、多看书，不断学习充实自己。主要还是一些技术方面的书。<a href="/reading/">我的阅读室</a><br>2、新年里，继续积极思考工作中的改进点，并实施改进，不断提高工作效率。<br>3、要努力，认真，务实做事情，养成一步一个脚印的习惯，这是生活的本质，只有不断付出和劳动，才会得到回报。</p>
+</blockquote>
+<h3 id="生活方面">生活方面</h3><blockquote>
+<p>1、每周坚持一次锻炼，必须要强制自己执行，注意身体。<br>2、按时吃早，中，晚餐，不能熬夜，注意喝水。<br>3、要孝顺父母，疼老婆和儿子，照顾好家庭。<br>4、将新房装修好，做好书房，有单独的电脑和开发环境，一颗永不停歇的事业心。</p>
+</blockquote>
+<h3 id="其他">其他</h3><blockquote>
+<p>只有不断地付出，终会有回报。新年里，我只希望我自己能够：有思想，有行动！加油~！！</p>
+</blockquote>
+<p>摘抄一段代码共勉：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> chance = rand() % <span class="number">100</span> , hard = <span class="number">0</span> , dream = chance + hard ; <span class="comment">//梦想是由机遇和个人努力来实现</span></span><br><span class="line"><span class="keyword">while</span>( dream = chance + hard &lt; <span class="number">100</span> &amp;&amp; ++hard )<span class="comment">//成功不可能一蹴而就，不仅需要上天的机会，更需要每天的努力</span></span><br><span class="line"> &#123;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt;<span class="string">"Come on! Child!"</span>&lt;&lt;<span class="built_in">std</span>::endl;<span class="comment">//机会总是留给有准备的人，继续努力</span></span><br><span class="line">  chance = rand() % <span class="number">100</span>;<span class="comment">//只要不曾放弃，机遇总会到来</span></span><br><span class="line"> &#125;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt;<span class="string">"Oh! Success!"</span>&lt;&lt;<span class="built_in">std</span>::endl;<span class="comment">//坚持梦想，努力就会成功</span></span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>时光飞逝，转眼间进入新的一年2016~，在这里，给大家拜年啦，祝大家新年快乐，心想事成！<img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f0pabkdroyj303k03k0t0.jpg" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="Thinkings" scheme="http://boxvv.com/tags/Thinkings/"/>
+    
+      <category term="生活感悟" scheme="http://boxvv.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[PHP页面部分中文字符丢失问题]]></title>
+    <link href="http://boxvv.com/2016-02-05/PHP-Character.html"/>
+    <id>http://boxvv.com/2016-02-05/PHP-Character.html</id>
+    <published>2016-02-05T12:04:23.000Z</published>
+    <updated>2016-02-05T12:04:26.283Z</updated>
+    <content type="html"><![CDATA[<p>今天遇到这样一个问题，前台页面将用户输入的字符传到后台后，经过处理，发现在页面中显示的不正确，中文字符丢失。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
+<h3 id="问题现象">问题现象</h3><p>输入的字符是“祎”，而在页面中显示的时候却丢失。</p>
+<h3 id="解决方法">解决方法</h3><p>经过查找，发现是编码格式的问题。<br>举例：原本是这样：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> htmlspecialchars(<span class="string">"祎"</span>,ENT_COMPAT ,<span class="string">'GB2312'</span>).<span class="string">":end&lt;br&gt;"</span>;</span><br><span class="line"><span class="comment">//返回为空</span></span><br></pre></td></tr></table></figure></p>
+<p>经过修改后，就正确了。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> htmlspecialchars(<span class="string">"祎"</span>,ENT_COMPAT ,<span class="string">'GBK'</span>).<span class="string">":end&lt;br&gt;"</span>;</span><br><span class="line"><span class="comment">//返回正确结果。祎</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="问题延伸">问题延伸</h3><h4 id="什么是GBK">什么是GBK</h4><p>GBK是国家标准GB2312基础上扩容后兼容GB2312的标准。GBK的文字编码是用双字节来表示的，即不论中、英文字符均使用双字节来表示，为了区分中文，将其最高位都设定成1。GBK包含全部中文字符，是国家编码，通用性比UTF8差，不过UTF8占用的数据库比GBD大。</p>
+<h4 id="GBK与GB2312的区别">GBK与GB2312的区别</h4><ul>
+<li>gb2312是简体中文的码</li>
+<li>gbk支持简体中文及繁体中文 </li>
+<li>GB2312是GBK的子集，GBK是GB18030的子集 </li>
+</ul>
+<p>GBK是一个汉字编码标准，全称《汉字内码扩展规范》,于1995 年制定。GB2312是1980年国家制定的汉字内码规范。</p>
+<p>GBK标准中收录了2万多汉字及符号，因其最早被WINDOWS采用，所以其应用范围非常广。GB2312中收录了6千多汉字及符号，通常所说的一、二级汉字库就全部包含在GB2312中。</p>
+<p>虽然GB2312包含了绝大部分的常用简体汉字，但是由于中文的复杂性，所以GB2312目前已经越来越不能适应需要了，特别是因为人名、地名中包含的很多字GB2312中都没有，如朱镕基的‘镕’字，GB2312中就没有包含，这样导致很多混乱。</p>
+<p>正因为GB2312的这些问题，国家标准化委员会又制定了GB13000，GB13000制定的原则与GB2312不同，GB13000以国际化为目标， 该标准编码参照了Unicode 2.0 标准编码，与GB2312完全不兼容，因早期的计算机中的汉卡采用了GB2312，无法顺利向GB13000过渡，所以GB13000变成了一个纸面上的 标准，无法推广。</p>
+<p>有了以上经验，国家标准化委员会制定了GBK标准，他兼容GB2312标准，同时在GB2312标准的基础上扩展了GB13000包含的字，但编码修改 了，该标准一经推出，就被WINDOWS95所采用（另一种说法是微软协助制定了此标准，这也可以印证为什么GBK标准一直没有出现在官方的标准目录 中）。因有微软的支持，该标准迅速得到广泛的应用。</p>
+<p>GBK之后又有GB18030标准，因GB18030较GBK又多了几千汉字，码位不足，GB18030使用了2byte与4byte混合编码方式，这又给软件增加了难题，所以虽然GB18030推出了近5年，仍然没有得到广泛应用。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天遇到这样一个问题，前台页面将用户输入的字符传到后台后，经过处理，发现在页面中显示的不正确，中文字符丢失。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[页面空格占位符汇总]]></title>
+    <link href="http://boxvv.com/2016-01-30/Html-blank.html"/>
+    <id>http://boxvv.com/2016-01-30/Html-blank.html</id>
+    <published>2016-01-30T01:35:29.000Z</published>
+    <updated>2016-01-30T02:05:34.487Z</updated>
+    <content type="html"><![CDATA[<p>汇总HTML中空格占位符，方便后续查找使用。<img src="/images/JavaScript/html.png" class="img-logo"><a id="more"></a></p>
+<h3 id="空格占位符">空格占位符</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">符号</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>&amp;#32;</code></td>
+<td style="text-align:left">普通的英文半角空格</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;#160;</code></td>
+<td style="text-align:left">普通的英文半角空格但不换行 no-break space</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;nbsp;</code></td>
+<td style="text-align:left">同上</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;#xA0;</code></td>
+<td style="text-align:left">同上</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;#12288;</code></td>
+<td style="text-align:left">中文全角空格 （一个中文宽度）</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;#8194;</code></td>
+<td style="text-align:left">en空格 （半个中文宽度）</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;ensp;</code></td>
+<td style="text-align:left">同上</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;#8195;</code></td>
+<td style="text-align:left">em空格 （一个中文宽度）</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;emsp;</code></td>
+<td style="text-align:left">同上</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&amp;#8197;</code></td>
+<td style="text-align:left">四分之一em空格 （四分之一中文宽度）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="其他说明">其他说明</h3><p>相比平时的空格（<code>&amp;#32;</code>），nbsp拥有不间断（non-breaking）特性。即连续的nbsp会在同一行内显示。即使有100个连续的nbsp，浏览器也不会把它们拆成两行。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>汇总HTML中空格占位符，方便后续查找使用。<img src="/images/JavaScript/html.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://boxvv.com/tags/HTML/"/>
+    
+      <category term="技术文章" scheme="http://boxvv.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[在DOS使用SVN之执行命令整理(TortoiseProc.exe)]]></title>
+    <link href="http://boxvv.com/2016-01-23/TortoiseProc-Command.html"/>
+    <id>http://boxvv.com/2016-01-23/TortoiseProc-Command.html</id>
+    <published>2016-01-23T13:03:01.000Z</published>
+    <updated>2016-01-23T13:58:54.975Z</updated>
+    <content type="html"><![CDATA[<p>TortoiseSVN因为所有的命令都是通过命令行参数控制，你可以自动批处理脚本或从其它程序（例如你喜欢的文本编辑器）启动特定的命令和对话框。<img src="/images/Other/SVN.png" class="img-logo"><a id="more"></a></p>
+<h3 id="TortoiseSVN命令">TortoiseSVN命令</h3><p>TortoiseSVN的GUI程序被称为TortoiseProc.exe。</p>
+<p>所有的命令都指定参数 /command：ABCD，ABCD是必须的命令名。大多数这些命令需要至少一个路径作为参数，如 /path：“一些路径”。</p>
+<p>由于一些命令需要一个目标路径的列表（例如提交一些特定的文件）/path 参数可以接收多个路径，由一个*字符分隔。</p>
+<p>TortoiseSVN使用临时文件在shell扩展和主程序之间传递多个参数。从TortoiseSVN 1.5.0或更高版本， / notempfile参数是过时的并且没有必要将它添加了。</p>
+<p>进度对话框用于提交，更新和更多的命令通常保持打开状态的命令后，直到用户按下“确定”按钮完成。这是可以改变的，在设置对话框中选中相应的选项。但是，使用此设置将关闭进度对话框，不管你的批处理文件或从TortoiseSVN右键菜单中启动命令。</p>
+<p>要指定一个不同的位置配置文件，使用的参数 /configdir：“路径为 config 目录”。这将覆盖默认的路径，包括任何注册表设置。</p>
+<p>要关闭进度对话框的命令结束的情况下自动设置永久性的参数，你可以传递/ closeonend 参数。</p>
+<pre><code>/ closeonend：<span class="number">0</span>不自动关闭对话框
+/ closeonend：<span class="number">1</span>，会自动关闭，如果没有错误
+/ closeonend：<span class="number">2</span>会自动关闭，如果没有发生错误和冲突
+/ closeonend：<span class="number">3</span>会自动关闭，如果没有错误，冲突和合并
+/ closeonend：<span class="number">4</span>会自动关闭，如果没有错误，冲突和合并
+</code></pre><p>下表列出了所有可以使用TortoiseProc.exe命令行访问的命令。如上所述，这些应中使用的形式 /command：abcd 。在表中 /command 前缀被省略以节约空间。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">命令</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">:about</td>
+<td style="text-align:left">显示关于对话框。如果直在dos中输入TortoiseProc 也将直接显示关于对话框。</td>
+</tr>
+<tr>
+<td style="text-align:left">:log</td>
+<td style="text-align:left">打开日志对话框。 /path 指定的文件或文件夹的日志显示。附加的选项可以设置了/startrev:XXX, /endrev:XXX, /strict，启用“停止复制”复选框，/merge 启用“包括合并版本”复选框，/findstring :“过滤器字符串” ，/findtext 的强制过滤器使用文本，而不是正则表达式，或 /findregex 强制使用正则表达式过滤器，而不是简单的文本搜索。并且 /findtype:X 其中X是一个从0到511之间的数字。这些数字的总和以下选项：<br>    /findtype:0 过滤所有<br>    /findtype:1 过滤消息<br>    /findtype:2 过滤路径<br>    /findtype:4 过滤作者<br>    /findtype:8 过滤修改器<br>    /findtype:16 不使用<br>    /findtype:32 过滤错误ID<br>    /findtype:64 不使用<br>    /findtype:128 过滤时间<br>    /findtype:256 按日期范围过滤器<br>如果 /outfile:path 为指定文件，写入到该文件的日志对话框关闭时，将选中版本的。都写在相同的格式是用来指定在合并对话框订正订正。</td>
+</tr>
+<tr>
+<td style="text-align:left">:checkout</td>
+<td style="text-align:left">打开“检出”对话。 /path 指定目标目录，/url 指定检出的URL。如果您指定键 /blockpathadjustments，自动检测路径被阻断调整。 /revision:XXX 指定的修订检查。</td>
+</tr>
+<tr>
+<td style="text-align:left">:import</td>
+<td style="text-align:left">打开的导入对话框。 / path 指定要导入的数据的目录。您也可以指定/logmsg的的开关，通过预定义的日志信息导入对话框。或者，如果你不想通过在命令行上的日志信息，的使用/ logmsgfile:路径，路径指向一个文件，其中包含的日志信息。</td>
+</tr>
+<tr>
+<td style="text-align:left">:update</td>
+<td style="text-align:left">更新工作的SVN路径。如果该选项 /rev 的话，会显示一个对话框，要求用户到哪个修订版本的更新应该去。为了避免对话框中指定修订版本号 /rev:1234。其他选项 /nonrecursive 和/ignoreexternals 的。</td>
+</tr>
+<tr>
+<td style="text-align:left">:commit</td>
+<td style="text-align:left">打开提交对话框。/path 指定了目标路径或需要提交的文件的列表。您也可以指定/ logmsg 的的开关，通过预定义的日志信息，在提交对话框。或者，如果你不想通过在命令行上的日志信息，的使用 /logmsgfile:路径，路径 点到一个文件中包含的日志信息。要预先填入bug的ID的情况下，你已经设置了集成bug跟踪系统正确，你可以使用 /BUGID：“bug的ID在这里”做到这一点。</td>
+</tr>
+<tr>
+<td style="text-align:left">:add</td>
+<td style="text-align:left">添加/版本控制的路径中的文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">:revert</td>
+<td style="text-align:left">还原的工作副本的本地修改。/path 告诉哪些项目恢复。</td>
+</tr>
+<tr>
+<td style="text-align:left">:cleanup</td>
+<td style="text-align:left">清洁起来中断或中止操作，并解除工作副本的 /path。</td>
+</tr>
+<tr>
+<td style="text-align:left">:resolve</td>
+<td style="text-align:left">标记 /path 解决一个指定文件的冲突 。如果 /noquestion 是给定的，那么解决的是做了不要求用户干涉，如果它真正应该让用户来干涉该操作。</td>
+</tr>
+<tr>
+<td style="text-align:left">:repocreate</td>
+<td style="text-align:left">创建一个版本库中 /path</td>
+</tr>
+<tr>
+<td style="text-align:left">:switch</td>
+<td style="text-align:left">打开选项对话框。/path 指定目标目录。</td>
+</tr>
+<tr>
+<td style="text-align:left">:export</td>
+<td style="text-align:left">的工作副本导出 到另一个目录/路径。/path 指向一个没有版本控制目录，对话框会询问出口的目录 /path 的URL 。</td>
+</tr>
+<tr>
+<td style="text-align:left">:dropexport</td>
+<td style="text-align:left">在/ path的工作副本导出到指定的目录 /droptarget。这种出口不使用的出口对话框，而是直接执行。选项 /overwrite 指定覆盖现有文件，无需用户确认，和选项 /autorename 的规定，如果文件已经存在，导出的文件自动重命名，以避免覆盖。</td>
+</tr>
+<tr>
+<td style="text-align:left">:merge</td>
+<td style="text-align:left">打开合并对话框。 / path指定了目标目录。</td>
+</tr>
+<tr>
+<td style="text-align:left">:copy</td>
+<td style="text-align:left">/tag 对话框。/path 是分支 /tag 从工作副本。/URL 的目标URL。您也可以指定 /logmsg 的开关，通过预定义的日志信息的分支/标签对话框。或者，如果你不想通过在命令行上的日志信息，的使用/logmsgfile：路径，路径 点到一个文件中包含的日志信息。</td>
+</tr>
+<tr>
+<td style="text-align:left">:settings</td>
+<td style="text-align:left">打开设置对话框。</td>
+</tr>
+<tr>
+<td style="text-align:left">:remove</td>
+<td style="text-align:left">删除的文件 /path 从版本控制的路径。</td>
+</tr>
+<tr>
+<td style="text-align:left">:rename</td>
+<td style="text-align:left">重命名文件 /path。一个对话框，询问该文件的新名称。为了避免类似的文件重命名一个步骤的问题，通过 /noquestion</td>
+</tr>
+<tr>
+<td style="text-align:left">:diff</td>
+<td style="text-align:left">开始在TortoiseSVN设置的外置的区别程序。/path 指定的第一个文件。如果的选项 /PATH2 设置的，那么diff程序开始，这两个文件。如果 /PATH2 被省略，则差异之间进行文件 /path 和它的基础。显式设置的版本号使用了 /startrev:XXX 和 /endrev:XXX。 如果/blame PATH2 没有设置，那么差异是由第一个责怪的文件的修订。</td>
+</tr>
+<tr>
+<td style="text-align:left">:showcompare</td>
+<td style="text-align:left">根据不同的URL和修订比较，可以显示出一个统一的diff（如果统一设置的选项），出现一个对话框的列表已更改的文件或URL指向文件开始为这两个文件的差异。<br>URL1，URL2， revision1的和revision2的选项 必须指定的。可选的选项pegrevision， ignoreancestry，指责和统一。</td>
+</tr>
+<tr>
+<td style="text-align:left">:conflicteditor</td>
+<td style="text-align:left">开始的冲突工具，在TortoiseSVN的设置有冲突的文件 /path 的正确文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">:relocate</td>
+<td style="text-align:left">打开重定位对话框。/path 指定重新定位的工作副本路径。</td>
+</tr>
+<tr>
+<td style="text-align:left">:help</td>
+<td style="text-align:left">打开帮助文档。</td>
+</tr>
+<tr>
+<td style="text-align:left">:repostatus</td>
+<td style="text-align:left">打开检查修改对话框。/path 指定的工作副本的目录。</td>
+</tr>
+<tr>
+<td style="text-align:left">:repobrowser</td>
+<td style="text-align:left">启动库浏览器“对话框中，指向的URL的工作副本的URL地址 /path 指向工作文件路径。另外一个选项 /REV:XXX可以用来指定修订版本库浏览器显示。如果 /REV:XXX 省略，则默认为HEAD。如果一个URL，/projectpropertiespath：路径 /WC 路径点 从哪里阅读和使用项目属性指定的路径。</td>
+</tr>
+<tr>
+<td style="text-align:left">:ignore</td>
+<td style="text-align:left">添加到忽略列表中的所有目标 /path，即增加了使用svn：忽略 对这些文件的属性。</td>
+</tr>
+<tr>
+<td style="text-align:left">:blame</td>
+<td style="text-align:left">打开追溯对话框指定的文件/path。<br>如果选项了/startrev 及 /endrev 的设置，然后在对话框，询问追溯范围不显示，但修改这些选项的值来代替。<br>如果该选项 /line:nnn，TortoiseBlame会打开，显示指定行数。<br>选项 /ignoreeol， /ignorespaces 和 /ignoreallspaces，也都支持。</td>
+</tr>
+<tr>
+<td style="text-align:left">:cat</td>
+<td style="text-align:left">保存文件的工作副本或URL路径 /path /savepath：路径中指定的位置 。修订 /revision：XXX。这可以被用来获取某个特定的版本的文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">:createpatch</td>
+<td style="text-align:left">创建一个补丁文件 /path 中指定的路径 。</td>
+</tr>
+<tr>
+<td style="text-align:left">:revisiongraph</td>
+<td style="text-align:left">显示给定的路径 /path 中的版本变化图 。</td>
+</tr>
+<tr>
+<td style="text-align:left">:lock</td>
+<td style="text-align:left">锁定一个文件或文件 /path 在一个指定的目录中的所有文件 。’锁定’对话框，使用户可以输入注释的锁。</td>
+</tr>
+<tr>
+<td style="text-align:left">:unlock</td>
+<td style="text-align:left">解锁一个文件或文件 /path 在一个指定的目录中的所有文件 。</td>
+</tr>
+<tr>
+<td style="text-align:left">:rebuildiconcache</td>
+<td style="text-align:left">重建windows的图标缓存。仅使用Windows图标被破坏的情况下。（这是无法避免的）的一个副作用的是，桌面上的图标会重新组织。为了抑制的消息框，通过 /noquestion。</td>
+</tr>
+<tr>
+<td style="text-align:left">:properties</td>
+<td style="text-align:left">显示的属性对话框中指定的路径 /path。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例">示例</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">TortoiseProc.exe /<span class="built_in">command</span>:commit /path:<span class="string">"c:\svn_wc\file1.txt* </span><br><span class="line">c:\svn_wc\file2.txt"</span> /logmsg:<span class="string">"test log message"</span> /closeonend:<span class="number">0</span></span><br><span class="line"></span><br><span class="line">TortoiseProc.exe /<span class="built_in">command</span>:update /path:<span class="string">"c:\svn_wc\" /closeonend:0</span><br><span class="line"></span><br><span class="line">TortoiseProc.exe /command:log /path:"</span>c:\svn_wc\file1.txt<span class="string">" /startrev:50 /endrev:60 /closeonend:0</span></span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>TortoiseSVN因为所有的命令都是通过命令行参数控制，你可以自动批处理脚本或从其它程序（例如你喜欢的文本编辑器）启动特定的命令和对话框。<img src="/images/Other/SVN.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="SVN" scheme="http://boxvv.com/tags/SVN/"/>
+    
+      <category term="技术文章" scheme="http://boxvv.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[RedHat下MySQL的安装与使用]]></title>
+    <link href="http://boxvv.com/2016-01-23/RedHat-installed-mysql.html"/>
+    <id>http://boxvv.com/2016-01-23/RedHat-installed-mysql.html</id>
+    <published>2016-01-23T02:47:38.000Z</published>
+    <updated>2016-01-23T02:50:05.156Z</updated>
+    <content type="html"><![CDATA[<p> RedHat 下MySQL安装,简单设置以用基本的使用方法,需要的朋友可以参考下。<img src="/images/OS/redhat.jpg" class="img-logo"><a id="more"></a></p>
+<h3 id="安装">安装</h3><h4 id="查看是否安装">查看是否安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum list installed mysql*</span><br></pre></td></tr></table></figure>
+<h4 id="查看现有安装包">查看现有安装包</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum list mysql*</span><br></pre></td></tr></table></figure>
+<h4 id="安装mysql服务器端">安装mysql服务器端</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum install mysql-dev</span><br><span class="line">yum install mysql-server</span><br></pre></td></tr></table></figure>
+<h4 id="安装mysql客户端（可选）">安装mysql客户端（可选）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install mysql</span><br></pre></td></tr></table></figure>
+<h3 id="配置">配置</h3><h4 id="设置默认字符和引擎">设置默认字符和引擎</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/my.cnf&lt;br&gt;</span><br><span class="line">//在[mysqld]下添加&lt;br&gt;</span><br><span class="line">default-character-set=utf8&lt;br&gt;</span><br><span class="line">default-storage-engine=INNODB</span><br></pre></td></tr></table></figure>
+<h3 id="启动和关闭">启动和关闭</h3><h4 id="启动和关闭-1">启动和关闭</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/mysqld start</span><br><span class="line">/etc/init.d/mysqld stop</span><br></pre></td></tr></table></figure>
+<h4 id="开机启动">开机启动</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/sbin/chkconfig - - list </span><br><span class="line">/sbin/chkconfig add mysqld</span><br><span class="line">/sbin/chkconfig mysqld on</span><br></pre></td></tr></table></figure>
+<h3 id="开放远程连接">开放远程连接</h3><ol>
+<li>你想myuser使用mypassword从任何主机连接到mysql服务器的话:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES ON *.* TO <span class="string">'myuser'</span>@<span class="string">'%'</span> IDENTIFIED BY <span class="string">'mypassword'</span> WITH GRANT OPTION;</span><br><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="参考">参考</h3><ol>
+<li><a href="http://www.2cto.com/database/201207/141878.html" target="_blank" rel="external">linux下使用yum安装mysql</a></li>
+<li><a href="http://news.2ky.cn/59/auto-start-mysqld.htm" target="_blank" rel="external">设置MySQL开机自动启动的方法</a></li>
+<li><a href="http://www.cnblogs.com/xyzdw/archive/2011/08/11/2135227.html" target="_blank" rel="external">报错:1130-host … is not allowed to connect to this MySql server 开放mysql远程连接 不使用localhost</a></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p> RedHat 下MySQL安装,简单设置以用基本的使用方法,需要的朋友可以参考下。<img src="/images/OS/redhat.jpg" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="MySQL" scheme="http://boxvv.com/tags/MySQL/"/>
+    
+      <category term="Redhat" scheme="http://boxvv.com/tags/Redhat/"/>
+    
+      <category term="操作系统" scheme="http://boxvv.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[瑞雪兆丰年，2016年第一场雪]]></title>
+    <link href="http://boxvv.com/2016-01-21/Snow-2016.html"/>
+    <id>http://boxvv.com/2016-01-21/Snow-2016.html</id>
+    <published>2016-01-21T09:32:30.000Z</published>
+    <updated>2016-01-26T16:17:34.114Z</updated>
+    <content type="html"><![CDATA[<p>北国风光，千里冰封，万里雪飘。<img src="/images/Other/snowflake.png" class="img-logo"><a id="more"></a></p>
+<h3 id="美丽雪景">美丽雪景</h3><p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f0dbi5vczrj30hs0nqacw.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f0dbi8294dj30qo0f00ua.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f0dbi9cxp2j30f00qogn4.jpg" alt=""><br><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f0dbiaodg9j30qo0f040c.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f0dbi6nscbj30f00qot94.jpg" alt=""></p>
+<h3 id="晒美文（摘自网络）">晒美文（摘自网络）</h3><p>亲爱的老友，西安：</p>
+<p>你好，别来无恙！我是你的老朋友，雪。2016，很高兴在新的一年里又和你重逢。</p>
+<p>听说你最近被雾霾包围了，有点生病，我迫不及待要来看看你。请保持好心情，今天之后，你或许会得到缓解。</p>
+<p>我们的友谊好漫长，我都不记得第一次和你见面是啥时候了。但还记得很多人们给我写得诗文：“忽如一夜春风来，千树万树梨花开”，“拂草如连蝶，落树似飞花”。从古至今，你在我的印象中一直很美。今天我给你带来身银装，愿你一直美下去。</p>
+<p>一年不见，你过得挺好。我昨晚把你的城里城外都转了下，看到你的地铁又通达到好多地方了，听人们说，到2020年，你就进入“大地铁时代”了，那岂不是“一日看尽长安花”？为你感到高兴！</p>
+<p>但是我的到来，可能给你的孩子们出行带来不便。提醒驾驶员提前上路，开启示廓灯，注意控制车速、车距、避让过往行人，小心慢行，谨慎驾驶。</p>
+<p>上面这些图是咱们俩自拍的照片，我已经发到朋友圈去了，我没有美图，是原片，记得点赞。</p>
+<p>此致</p>
+<p>敬礼！</p>
+<p>祝：近日雾霾快快缓解，再次收获蓝天。</p>
+<p>爱你的初雪</p>
+<p>2016年1月21日</p>
+<p><em>文章摘自<a href="http://www.xinmin.cn" target="_blank" rel="external">新民网</a></em></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>北国风光，千里冰封，万里雪飘。<img src="/images/Other/snowflake.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="Snow" scheme="http://boxvv.com/tags/Snow/"/>
+    
+      <category term="生活感悟" scheme="http://boxvv.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[21张哲理漫画，看懂不是一般人！]]></title>
+    <link href="http://boxvv.com/2016-01-18/21-Cartoons.html"/>
+    <id>http://boxvv.com/2016-01-18/21-Cartoons.html</id>
+    <published>2016-01-18T13:02:49.000Z</published>
+    <updated>2016-01-19T02:23:03.196Z</updated>
+    <content type="html"><![CDATA[<p>非常有哲理，值得细细品味。<img src="/images/ProgramLife/windows.png" class="img-logo"><a id="more"></a></p>
+<p>1 鱼饵就应当符合鱼儿的胃口，而不是钓鱼者，这是人人皆知的道理，很多人却重复地错误着。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f03xw7p9ndj30a00dc3zw.jpg" class="img-shadow"></p>
+<p>2 思想的巨人，通常是行动的矮子，脚踏实地的做事是职场第一哲理。<br><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f03xw8sizgj30a00dcmyr.jpg" class="img-shadow"></p>
+<p>3 脑袋之所以是圆的，那是为了满足我们不断转换思路的需要。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f03xwakem0j30a20dcdhc.jpg" class="img-shadow"></p>
+<p>4 很多时候我们都知道要做什么，但是知道了以后，仍然会不做，这就是你一直没有成长或成功的原因，没有之一。<br><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f03xwc5pv5j30a20dcdhl.jpg" class="img-shadow"></p>
+<p>5 我们并不是拥有太少的时间，而是拥有太多我们不用的时间，时间去哪儿呢？2015你应该给自己一个答案。<br><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f03xwkirooj30a20dc76f.jpg" class="img-shadow"></p>
+<p>6 请在点餐前注意价格！其实这个是美国人很看重的俚语。<br><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f03xwma1owj30a20dcabh.jpg" class="img-shadow"></p>
+<p>7 踏着别人的脚步前进，超越就无从谈起，做回自己，勇于创新是不二的选择。<br><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f03xwof3afj30a20dcdh1.jpg" class="img-shadow"></p>
+<p>8 安全无小事，包括心理安全！<br><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f03xwqlo1dj30a20dcmym.jpg" class="img-shadow"></p>
+<p>9 找解决方案要比纠结原因的优先级高，麦肯锡又说没有原因的方法不是好方法。<br><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f03xws4543j30a10dcweq.jpg" class="img-shadow"></p>
+<p>10 “质量”迎来的是顾客的再次光顾，而非卖出去的货物的再次光顾。那么，我们该如何反思我们的工作质量呢？<br><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f03xwvwb2zj30a20dcdhg.jpg" class="img-shadow"></p>
+<p>11 彼此尊重才能达成彼此的理解，尊重的起点请学会自重。<br><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f03xwyus39j30a00dc75y.jpg" class="img-shadow"></p>
+<p>12 帮助别人成功，本身也是一种成功！其实这是最实在的成功法则，如果你不信请看一下《影响力》中的互惠法则吧。<br><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f03xx0ixrsj30a20dcgn3.jpg" class="img-shadow"></p>
+<p>13 一个人的努力，是加法效应；一个团队的努力，是乘法效应。<br><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f03xx2r87bj30a20dcq47.jpg" class="img-shadow"></p>
+<p>14 真正的创新只有在经历过擦肩而过后才能实现。<br><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f03xx3wv8uj30a20dcq47.jpg" class="img-shadow"></p>
+<p>15 想要看得清楚，其实只要换个视角就行~视角的本质是你的心智，你的心智其实是你过去的经历，这个经历包括心理层面的。<br><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f03xx5njw4j30a20dct9w.jpg" class="img-shadow"></p>
+<p>16 如果自己脚上没磨出老茧，就不要拿鞭子赶别人，这句话值得管理者深思。<br><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f03xx70hhcj30a10dcabk.jpg" class="img-shadow"></p>
+<p>17 总能找到这样的爱斯基摩人，他们拼命教导非洲的居民该如何生活，产品经理你听懂了嘛？<br><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f03xx8b7x9j30a20dcwfv.jpg" class="img-shadow"></p>
+<p>18 过多的会议是一个糟糕的组织明显的标志。<br><img src="http://ww2.sinaimg.cn/mw690/006hgXTLjw1f03xxakhr5j30a20dcwfn.jpg" class="img-shadow"></p>
+<p>19 子曰：“过而不改，是谓过矣。”<br><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f03xxcbxypj30a20dc75q.jpg" class="img-shadow"></p>
+<p>20 没有辛勤的劳动，就没有闲暇时的快乐，上班时间努力工作，下班时间疯狂休闲！<br><img src="http://ww4.sinaimg.cn/mw690/006hgXTLjw1f03xxe7d1cj30a20dcq49.jpg" class="img-shadow"></p>
+<p>21 践行你的承诺，并且争取做得更好，一个勇于兑现承诺的人是有心力的人。<br><img src="http://ww1.sinaimg.cn/mw690/006hgXTLjw1f03xxg1tfdj30a00dctag.jpg" class="img-shadow"></p>
+<p><em>本篇内容来源于网络</em></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>非常有哲理，值得细细品味。<img src="/images/ProgramLife/windows.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="Thinkings" scheme="http://boxvv.com/tags/Thinkings/"/>
+    
+      <category term="生活感悟" scheme="http://boxvv.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Html中tab标签页的实现(3种类型)]]></title>
+    <link href="http://boxvv.com/2016-01-15/Html-Tab.html"/>
+    <id>http://boxvv.com/2016-01-15/Html-Tab.html</id>
+    <published>2016-01-15T15:54:30.000Z</published>
+    <updated>2016-01-15T15:55:23.586Z</updated>
+    <content type="html"><![CDATA[<p>以小见大。如何在HTML中创建TAB标签页，很不错的源码，初学者借鉴。<img src="/images/JavaScript/html.png" class="img-logo"><a id="more"></a></p>
+<h3 id="源代码">源代码</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">xmlns</span>=<span class="value">"http://www.w3.org/1999/xhtml"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="title">head</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html;charset=gb2312"</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span>简洁Tab<span class="tag">&lt;/<span class="title">title</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css">  </span><br><span class="line">      </span><br><span class="line">    &lt;!<span class="tag">--</span>  </span><br><span class="line">      </span><br><span class="line">    <span class="tag">body</span>,<span class="tag">div</span>,<span class="tag">ul</span>,<span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0</span> auto</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">font</span>:<span class="value"> <span class="number">12px</span> <span class="string">"宋体"</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">a</span>:<span class="value">link &#123;</span><br><span class="line">	color: <span class="hexcolor">#00F</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-decoration</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">a</span>:<span class="value">visited &#123;</span><br><span class="line">	color: <span class="hexcolor">#00F</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-decoration</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">a</span>:<span class="value">hover &#123;</span><br><span class="line">	color: <span class="hexcolor">#c00</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-decoration</span>:<span class="value"> underline</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">ul</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">list-style</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.main</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">clear</span>:<span class="value"> both</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">8px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">&#125;</span>  </span><br><span class="line">      </span><br><span class="line">    <span class="comment">/*第一种形式*/</span>  </span><br><span class="line">      </span><br><span class="line"><span class="id">#tabs0</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">200px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">400px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#cbcbcb</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#f2f6fb</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.menu0</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">400px</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.menu0</span> <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">4px</span> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#FFFFff</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.menu0</span> <span class="tag">li</span><span class="class">.hover</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#f2f6fb</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#main0</span> <span class="tag">ul</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#main0</span> <span class="tag">ul</span><span class="class">.block</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">&#125;</span>  </span><br><span class="line">      </span><br><span class="line">    <span class="comment">/*第二种形式*/</span>  </span><br><span class="line">      </span><br><span class="line"><span class="id">#tabs1</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value"> left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">400px</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.menu1box</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">22px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">400px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value"> left</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#menu1</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">z-index</span>:<span class="value"> <span class="number">1</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#menu1</span> <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">72px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">21px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">21px</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#menu1</span> <span class="tag">li</span><span class="class">.hover</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#fff</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border-left</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#333</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border-top</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#333</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border-right</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#333</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="class">.main1box</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">clear</span>:<span class="value"> both</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">margin-top</span>:<span class="value"> -<span class="number">1px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#333</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">181px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">400px</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#main1</span> <span class="tag">ul</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#main1</span> <span class="tag">ul</span><span class="class">.block</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">&#125;</span>  </span><br><span class="line">      </span><br><span class="line">    <span class="comment">/*第三种形式*/</span>  </span><br><span class="line">      </span><br><span class="line"><span class="class">.menu2box</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">22px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">400px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value"> left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#FFFFff</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#tabs2</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">200px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">400px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid <span class="hexcolor">#cbcbcb</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#f2f6fb</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#tip2</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">22px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">22px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">z-index</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#f2f6fb</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#menu2</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">z-index</span>:<span class="value"> <span class="number">1</span></span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="id">#menu2</span> <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">4px</span> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">cursor</span>:<span class="value"> pointer</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">--</span>&gt;  </span><br><span class="line">      </span><br><span class="line">    </span><span class="tag">&lt;/<span class="title">style</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="stata">  </span><br><span class="line">      </span><br><span class="line">    &lt;!--  </span><br><span class="line">      </span><br><span class="line">    <span class="comment">/*第一种形式 第二种形式 更换显示样式*/</span>  </span><br><span class="line">      </span><br><span class="line">    function setTab(<span class="keyword">m</span>,<span class="keyword">n</span>) &#123;</span><br><span class="line">	<span class="keyword">var</span> tli=document.getElementById(<span class="string">"menu"</span>+<span class="keyword">m</span>).getElementsByTagName(<span class="string">"li"</span>);  </span><br><span class="line">      </span><br><span class="line">     <span class="keyword">var</span> mli=document.getElementById(<span class="string">"main"</span>+<span class="keyword">m</span>).getElementsByTagName(<span class="string">"ul"</span>);  </span><br><span class="line">      </span><br><span class="line">     <span class="keyword">for</span>(i=0;i&lt;tli.length;i++)&#123;  </span><br><span class="line">      </span><br><span class="line">      tli[i].className=i==<span class="keyword">n</span>?<span class="string">"hover"</span>: <span class="string">""</span>;</span><br><span class="line">	mli[i].style.<span class="keyword">display</span>=i==<span class="keyword">n</span>?<span class="string">"block"</span>: <span class="string">"none"</span>;</span><br><span class="line">&#125;  </span><br><span class="line">      </span><br><span class="line">    &#125;  </span><br><span class="line">      </span><br><span class="line">    <span class="comment">/*第三种形式 利用一个背景层定位*/</span>  </span><br><span class="line">      </span><br><span class="line"><span class="keyword">var</span> m3= &#123;</span><br><span class="line">	0: <span class="string">""</span>,1:<span class="string">"评论内容"</span>,2:<span class="string">"技术内容"</span>,3:<span class="string">"点评内容"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function nowtab(<span class="keyword">m</span>,<span class="keyword">n</span>) &#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="keyword">n</span>!=0 &amp;&amp; m3[0]==<span class="string">""</span>)m3[0]=document.getElementById(<span class="string">"main2"</span>).innerHTML;  </span><br><span class="line">      </span><br><span class="line">     document.getElementById(<span class="string">"tip"</span>+<span class="keyword">m</span>).style.left=<span class="keyword">n</span>*100+'px';  </span><br><span class="line">      </span><br><span class="line">     document.getElementById(<span class="string">"main2"</span>).innerHTML=m3[<span class="keyword">n</span>];</span><br><span class="line">&#125;  </span><br><span class="line">      </span><br><span class="line">    <span class="comment">//--&gt;  </span></span><br><span class="line">      </span><br><span class="line">    </span><span class="tag">&lt;/<span class="title">script</span>&gt;</span> </span><br><span class="line"> <span class="tag">&lt;/<span class="title">head</span>&gt;</span> </span><br><span class="line"> <span class="tag">&lt;<span class="title">body</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--第一种形式--&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"tabs0"</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"menu0"</span> <span class="attribute">id</span>=<span class="value">"menu0"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onclick</span>=<span class="value">"setTab(0,0)"</span> <span class="attribute">class</span>=<span class="value">"hover"</span>&gt;</span>新闻<span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onclick</span>=<span class="value">"setTab(0,1)"</span>&gt;</span>评论<span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onclick</span>=<span class="value">"setTab(0,2)"</span>&gt;</span>技术<span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onclick</span>=<span class="value">"setTab(0,3)"</span>&gt;</span>点评<span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"main"</span> <span class="attribute">id</span>=<span class="value">"main0"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"block"</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span>&gt;</span>新闻列表<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span>&gt;</span>评论列表<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span>&gt;</span>技术列表<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span>&gt;</span>点评列表<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--第二种形式--&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"tabs1"</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"menu1box"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"menu1"</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"hover"</span> <span class="attribute">onmouseover</span>=<span class="value">"setTab(1,0)"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>新闻<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onmouseover</span>=<span class="value">"setTab(1,1)"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>评论<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onmouseover</span>=<span class="value">"setTab(1,2)"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>技术<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onmouseover</span>=<span class="value">"setTab(1,3)"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>点评<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"main1box"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"main"</span> <span class="attribute">id</span>=<span class="value">"main1"</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"block"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">li</span>&gt;</span>新闻列表<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">li</span>&gt;</span>评论列表<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">li</span>&gt;</span>技术列表<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">li</span>&gt;</span>点评列表<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="comment">&lt;!--第三种形式--&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"tabs2"</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"menu2box"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"tip2"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"menu2"</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"hover"</span> <span class="attribute">onmouseover</span>=<span class="value">"nowtab(2,0)"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>新闻<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onmouseover</span>=<span class="value">"nowtab(2,1)"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>评论<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onmouseover</span>=<span class="value">"nowtab(2,2)"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>技术<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">onmouseover</span>=<span class="value">"nowtab(2,3)"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>点评<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"main"</span> <span class="attribute">id</span>=<span class="value">"main2"</span>&gt;</span></span><br><span class="line">     新闻内容 </span><br><span class="line">   <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="title">br</span> /&gt;</span>   </span><br><span class="line"> <span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><em>本文来源于 网络</em></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>以小见大。如何在HTML中创建TAB标签页，很不错的源码，初学者借鉴。<img src="/images/JavaScript/html.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://boxvv.com/tags/HTML/"/>
+    
+      <category term="JavaScript" scheme="http://boxvv.com/tags/JavaScript/"/>
+    
+      <category term="技术文章" scheme="http://boxvv.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[证实与证伪]]></title>
+    <link href="http://boxvv.com/2016-01-13/Confirm-falsification.html"/>
+    <id>http://boxvv.com/2016-01-13/Confirm-falsification.html</id>
+    <published>2016-01-13T09:32:30.000Z</published>
+    <updated>2016-01-13T14:14:37.871Z</updated>
+    <content type="html"><![CDATA[<p>在现实生活或学术研究中，如果某种观点缺乏充分的证据或是没有证据证实，人们往往会否定其存在，如地外文明、史前文明，甚至包括人体特异功能等等；但是反过来，好像还没有谁能证明它是假的。<img src="/images/ProgramLife/connexion-internet.png" class="img-logo"><a id="more"></a></p>
+<p>经过证实的东西，人们承认其存在，这理所当然；但是，没有证实的东西就否定其存在，这好像没有充分的理由。</p>
+<p>哥白尼的日心说，当时没有证实，被否定了，罗马教廷还将坚定的传播者布鲁诺活活烧死在罗马鲜花广场；时至今日，行星绕日已经成为不争的共识。</p>
+<p>达尔文的进化论推出时，虽经一定程度的证实，但也遭到很多权威的否定，今天，达尔文的观点不但已经成为常识，其理论还延伸到社会科学领域。</p>
+<p>爱因斯坦的相对论发表时，否定者更是大有人在，但随后的天文学和高能物理学的成果却证明了相对论的正确。</p>
+<p>在一定的历史条件下，有时证实一个观点很难。</p>
+<p>曾记得上世纪八十年代初，关于人体特异功能的议论沸沸扬扬，各种观点充斥报刊，甚至成为普通百姓茶余饭后津津乐道的话题，但是，由于没有证实（应该说是没有充分地证实），沸沸扬扬了一阵，权威报刊便下了“权威”的结论：人体特异功能系子虚乌有，但是同样没有充分的理由。直至今天，国内学术界对这个问题的认识也还是含含糊糊，不置可否。</p>
+<p>其实，美国和前苏联早就在对人体特异功能进行研究，耳朵、腋下和手指识字等现象被称为“非视觉器官图像识别”。国外开展这项研究迄今至少已有70多年的历史。</p>
+<p>还记得当年舆论对人体特异功能进行否定时，国内一位著名教育家在报刊上撰文附和，洋洋万言之下，却找不到充分否定的理由，于是生硬地丢下一句话：“这是常识所不能解释的”。何谓常识，顾名思义，即平常的认识。众所周知，一些新的发现可以用常识来解释，但是很多新的东西却是常识解释不了的，因为常识相对于新的东西，在认识上往往滞后；而新的东西变成常识也需要相当的时间甚至是漫长的过程。</p>
+<p>日心说、进化论、相对论等等学说之所以遭受压制和否定，就是因为当时的常识不能解释；今天的宇宙爆炸、夸克等观点，常识又解释得了吗？</p>
+<p>证实，是用已知的知识解释未知的东西。已知是有限的，而未知是无限的，用有限的认识诠释无限的世界，在一定范围内或某种前提条件下可以相对做到，如果希望无条件地绝对诠释一切，这不但不可能，而且在认识方法上本身就是一个错误。</p>
+<p>凡事能够加以证实，当然最好；如果证实不了，也不要轻易否定，如果非要否定，请一定要设法证伪，因为证伪十分重要。</p>
+<p>没有经过证伪的东西如果轻易否定，会影响人们对未知领域的探索和研究。</p>
+<p>没有经过证伪的东西如果轻易否定，会使人形成简单思考放弃思辨的习惯。</p>
+<p>其实，对未经证伪的东西不作轻易否定并无大碍，这样可以为人们认识新事物留下足够的想象空间。我以为，要以“证实”作为肯定的依据，但不能将“未经证实”作为否定的理由。要否定任何东西，不但要对相反的东西进行证实，还必须对这个东西进行证伪。</p>
+<p>在人类认识世界的过程中，证伪与证实是同等重要的。</p>
+<p><em>内容来源 <a href="http://www.chinawriter.com.cn" target="_blank" rel="external">中国作家网</a></em></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在现实生活或学术研究中，如果某种观点缺乏充分的证据或是没有证据证实，人们往往会否定其存在，如地外文明、史前文明，甚至包括人体特异功能等等；但是反过来，好像还没有谁能证明它是假的。<img src="/images/ProgramLife/connexion-internet.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="autotest" scheme="http://boxvv.com/tags/autotest/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JS 控制select选中项]]></title>
+    <link href="http://boxvv.com/2016-01-13/javascript-select.html"/>
+    <id>http://boxvv.com/2016-01-13/javascript-select.html</id>
+    <published>2016-01-12T22:28:55.000Z</published>
+    <updated>2016-01-13T13:39:49.231Z</updated>
+    <content type="html"><![CDATA[<p>小演示，大变通。本文分享如何通过JavaScript控制select控件选择，供大家参考。<img src="/images/JavaScript/JavaScript.png" class="img-logo"><a id="more"></a></p>
+<h4 id="代码">代码</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="openscad"></span><br><span class="line">    var selectedValue = '&lt;<span class="built_in">%</span>= request.getAttribute<span class="params">(<span class="string">"line"</span>)</span><span class="built_in">%</span>&gt;';</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">changeSelected</span><span class="params">()</span>&#123;</span></span><br><span class="line">        jsSelectItemByValue<span class="params">(document.getElementById<span class="params">(<span class="string">"mySelect"</span>)</span>,selectedValue)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">jsSelectItemByValue</span><span class="params">(objSelect,objItemText)</span> &#123;</span></span><br><span class="line">        <span class="keyword">for</span><span class="params">(var i=<span class="number">0</span>;i&lt;objSelect.options.length;i++)</span> &#123;</span><br><span class="line">            <span class="keyword">if</span><span class="params">(objSelect.options[i].value == objItemText)</span> &#123;</span><br><span class="line">                objSelect.options[i].selected = <span class="literal">true</span>;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="title">body</span> <span class="attribute">onload</span>=<span class="value">"changeSelected()"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">select</span> <span class="attribute">id</span>=<span class="value">"mySelect"</span> <span class="attribute">name</span>=<span class="value">"mySelect"</span>&gt;</span></span><br><span class="line">&amp;nbsp;&amp;nbsp; &amp;nbsp;  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"0"</span>&gt;</span>0<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">&amp;nbsp;&amp;nbsp; &amp;nbsp;  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"1"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">&amp;nbsp;&amp;nbsp; &amp;nbsp;  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"2"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">&amp;nbsp;&amp;nbsp; &amp;nbsp;  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"3"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">&amp;nbsp;   <span class="tag">&lt;/<span class="title">select</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>小演示，大变通。本文分享如何通过JavaScript控制select控件选择，供大家参考。<img src="/images/JavaScript/JavaScript.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://boxvv.com/tags/JavaScript/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[js获取url中的中文参数出现乱码]]></title>
+    <link href="http://boxvv.com/2016-01-13/javascript-decode.html"/>
+    <id>http://boxvv.com/2016-01-13/javascript-decode.html</id>
+    <published>2016-01-12T22:28:55.000Z</published>
+    <updated>2016-01-12T22:59:32.956Z</updated>
+    <content type="html"><![CDATA[<p>在js构造的url中，如果含有中文参数，则会出现乱码。本文分享下解决方法，供大家参考。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
+<h4 id="当在地址栏中传递参数时，服务器端获取的参数值为乱码。">当在地址栏中传递参数时，服务器端获取的参数值为乱码。</h4><p>解决：<br>1、使用JS将中文转为ASCII码<br>var param = encodeURI(“中文参数”);<br>备注：encodeURI该方法的目的是对 URI 进行完整的编码，因此对以下在 URI 中具有特殊含义的 ASCII 标点符号，encodeURI() 函数是不会进行转义的：;/?:@&amp;=+$,#</p>
+<p>代码示例:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="built_in">encodeURI</span>(<span class="string">"我是中文"</span>)); </span><br><span class="line">alert(<span class="built_in">decodeURI</span>(<span class="built_in">encodeURI</span>(<span class="string">"我是中文"</span>)));</span><br></pre></td></tr></table></figure>
+<h4 id="server端接收传递过来的参数">server端接收传递过来的参数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> param = request.getParamter(<span class="string">"param"</span>);</span><br></pre></td></tr></table></figure>
+<p>现在的内容param是乱码。</p>
+<h4 id="对接收的参数进行转码">对接收的参数进行转码</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Stringt newparam = <span class="keyword">new</span> <span class="built_in">String</span>(param.getByte(<span class="string">"iso-8859-1"</span>),<span class="string">"utf-8"</span>);</span><br></pre></td></tr></table></figure>
+<p>备注：接收的参数一定要以ISO-8859-1获取字节，然后根据网页的编码格式new一个新的字符串，这里使用的是utf-8编码</p>
+<h4 id="例子">例子</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRequest</span>(<span class="params"></span>) </span>&#123;   </span><br><span class="line">       <span class="keyword">var</span> url = <span class="built_in">window</span>.location.search; <span class="comment">//获取url中"?"符后的字串   </span></span><br><span class="line">       <span class="keyword">var</span> theRequest = <span class="keyword">new</span> <span class="built_in">Object</span>();   </span><br><span class="line">       <span class="keyword">if</span> (url.indexOf(<span class="string">"?"</span>) != -<span class="number">1</span>) &#123;   </span><br><span class="line">          <span class="keyword">var</span> str = url.substr(<span class="number">1</span>);   </span><br><span class="line">          strs = str.split(<span class="string">"&amp;"</span>);   </span><br><span class="line">          <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; strs.length; i ++) &#123;   </span><br><span class="line">              <span class="comment">//就是这句的问题</span></span><br><span class="line">             theRequest[strs[i].split(<span class="string">"="</span>)[<span class="number">0</span>]]=<span class="built_in">decodeURI</span>(strs[i].split(<span class="string">"="</span>)[<span class="number">1</span>]); </span><br><span class="line">          &#125;   </span><br><span class="line">       &#125;   </span><br><span class="line">       <span class="keyword">return</span> theRequest;   </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在js构造的url中，如果含有中文参数，则会出现乱码。本文分享下解决方法，供大家参考。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[PHP开发中四种查询返回结果分析]]></title>
+    <link href="http://boxvv.com/2016-01-13/PHP-4-Query.html"/>
+    <id>http://boxvv.com/2016-01-13/PHP-4-Query.html</id>
+    <published>2016-01-12T22:28:55.000Z</published>
+    <updated>2016-01-12T23:01:06.104Z</updated>
+    <content type="html"><![CDATA[<p>PHP开发中四种查询返回结果分析,需要的朋友可以参考下。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
+<h4 id="mysql_result()">mysql_result()</h4><p>使用mysql_result()来获取数据</p>
+<p>代码如下:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$connection</span>=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"password"</span>); <span class="comment">//连接并选择数据库服务器</span></span><br><span class="line">mysql_select_db(<span class="string">"test"</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"insert into users(user_name)"</span>; <span class="comment">//在test数据库里插入一条数据</span></span><br><span class="line"><span class="variable">$query</span>.=<span class="string">"values('tuxiaohui')"</span>;</span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>);</span><br><span class="line"><span class="keyword">if</span>(!<span class="variable">$query</span>)</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"insert data failed!&lt;br&gt;"</span>;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"select * from users"</span>; <span class="comment">//查询数据</span></span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="variable">$rows_count</span>=<span class="number">0</span>;<span class="variable">$rows_count</span>&lt;<span class="number">7</span>;<span class="variable">$rows_count</span>++) <span class="comment">//用mysql_result获得数据并输出，mysql_result() 返回 MySQL 结果集中一个单元的内容。</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户ID："</span>.mysql_result(<span class="variable">$result</span>,<span class="variable">$rows_count</span>,<span class="string">"user_id"</span>).<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户名："</span>.mysql_result(<span class="variable">$result</span>,<span class="variable">$rows_count</span>,<span class="string">"user_name"</span>).<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="mysql_fetch_row()">mysql_fetch_row()</h4><p>使用mysql_fetch_row()来获取数据,以数组的形式返回查询结果</p>
+<p>代码如下:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$connection</span>=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"password"</span>); <span class="comment">//连接并选择数据库服务器</span></span><br><span class="line">mysql_select_db(<span class="string">"test"</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"select * from users"</span>;</span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span>=mysql_fetch_row(<span class="variable">$result</span>))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户ID："</span>.<span class="variable">$row</span>[<span class="number">0</span>].<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户名："</span>.<span class="variable">$row</span>[<span class="number">1</span>].<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="mysql_fetch_array()">mysql_fetch_array()</h4><p>使用mysql_fetch_array()来获取数据,同mysql_fetch_row()类似，也是获取结果集中当前行数据，并在调用后自动滑向下一行</p>
+<p>代码如下:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$connection</span>=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"password"</span>); <span class="comment">//连接并选择数据库服务器</span></span><br><span class="line">mysql_select_db(<span class="string">"test"</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"select * from users"</span>;</span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span>=mysql_fetch_array(<span class="variable">$result</span>))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户ID："</span>.<span class="variable">$row</span>[<span class="number">0</span>].<span class="string">"&lt;br&gt;"</span>; <span class="comment">//也可以写做$row["user_id"]</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户名："</span>.<span class="variable">$row</span>[<span class="number">1</span>].<span class="string">"&lt;br&gt;"</span>; <span class="comment">//也可以写做$row["user_name"]</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="mysql_fetch_object()">mysql_fetch_object()</h4><p>使用mysql_fetch_object()以对象的形式返回查询结果，也是用于查询数据结果集，返回当前行数据，并自动滑向下一行，不同的是它返回的是一个对象，这个对象的属性集合即为数据的属性集合，而属性上的值则为数据库中当前行该属性上的值 </p>
+<p>代码如下:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$connection</span>=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"root"</span>); <span class="comment">//连接并选择数据库服务器</span></span><br><span class="line">mysql_select_db(<span class="string">"test"</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"select * from users"</span>;</span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span>=mysql_fetch_object(<span class="variable">$result</span>))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户ID："</span>.<span class="variable">$row</span>-&gt;user_id.<span class="string">"&lt;br&gt;"</span>; <span class="comment">//通过对象运算符-&gt;获得改行数据在其属性上的值。</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户名："</span>.<span class="variable">$row</span>-&gt;user_name.<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="综合比较">综合比较</h4><p>mysql_result()：优点在于使用方便；其缺点在于功能少，一次调用只能获取结果数据集中的一行元素，对较大型的数据库效率较低；</p>
+<p>mysql_fetch_row()：优点在于执行效率在4种方法中最高；不足在于只能用数字作为属性索引来获得属性值，在使用时非常容易出现混淆；</p>
+<p>mysql_fetch_array()：执行效率同样高，同mysql_fetch_row()相差无几，并界可以用属性名方式直接获得属性值，因此在实际应用中最常用；</p>
+<p>mysql_fetch_object()：采用了面向对象思想，在设计思路上更为先进，如果习惯于用面向对象的思路来写程序，则会很自地选择它。其次，该方法的优点还体现在，对于结构较为负责的数据结果，在逻辑上更为清晰。 </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>PHP开发中四种查询返回结果分析,需要的朋友可以参考下。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[MySQL数据库like查询中文出现不准确的解决方法]]></title>
+    <link href="http://boxvv.com/2016-01-13/Mysql-Like.html"/>
+    <id>http://boxvv.com/2016-01-13/Mysql-Like.html</id>
+    <published>2016-01-12T22:28:55.000Z</published>
+    <updated>2016-01-12T22:33:50.214Z</updated>
+    <content type="html"><![CDATA[<p>mysql数据库like查询中文出现不准确的解决方法，中文检索有时候有点蛋疼，Mysql数据库like查询中文有时候会出现不准确。而且，在进行like检索时，有时候会返回一些与查询词不相关的记录，如查找 “%s%” 时，返回的结果中可能有中文字符，却没有s字符存在，这与数据库中文编码规则有关。<img src="/images/DataBase/sql.png" class="img-logo"><a id="more"></a></p>
+<h4 id="例证">例证</h4><p>如希望查找title中含有字母s的所有新闻：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">select</span> * <span class="keyword">from</span> test.news <span class="keyword">where</span> title <span class="keyword">like</span> <span class="string">'%s%'</span></span></span><br></pre></td></tr></table></figure>
+<p>返回的结果中有一些包含s，而有些则只有中文，很郁闷（也很邪恶，嘿嘿）。</p>
+<p>测试了下，发现一种解决方法，就是使用 BINARY（是CAST(str as BINARY)简短写法) 强制转换进行检索.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">select</span> * <span class="keyword">from</span> test.news <span class="keyword">where</span> <span class="built_in">binary</span> title <span class="keyword">like</span> <span class="string">'%s%'</span></span></span><br></pre></td></tr></table></figure>
+<p>这样结果就比较准确了，但还有一个问题，就是字母区分大小写，检索的时候依然不正确，只好再转化一下了：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">select</span> * <span class="keyword">from</span> test.news <span class="keyword">where</span> <span class="built_in">binary</span> <span class="keyword">ucase</span>(title) <span class="keyword">like</span>  <span class="string">'%s%'</span></span></span><br></pre></td></tr></table></figure>
+<p>如此，临时解决办法搞定，不过速度会变慢，希望以后的mysql版本能解决掉此问题。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>mysql数据库like查询中文出现不准确的解决方法，中文检索有时候有点蛋疼，Mysql数据库like查询中文有时候会出现不准确。而且，在进行like检索时，有时候会返回一些与查询词不相关的记录，如查找 “%s%” 时，返回的结果中可能有中文字符，却没有s字符存在，这与数据库中文编码规则有关。<img src="/images/DataBase/sql.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="MySQL" scheme="http://boxvv.com/tags/MySQL/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+</feed>

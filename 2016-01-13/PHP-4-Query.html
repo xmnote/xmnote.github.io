@@ -1,0 +1,577 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>PHP开发中四种查询返回结果分析 | 惟妙惟肖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Box">
+    
+
+    
+    <meta name="description" content="PHP开发中四种查询返回结果分析,需要的朋友可以参考下。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP开发中四种查询返回结果分析">
+<meta property="og:url" content="http://boxvv.com/2016-01-13/PHP-4-Query.html">
+<meta property="og:site_name" content="惟妙惟肖">
+<meta property="og:description" content="PHP开发中四种查询返回结果分析,需要的朋友可以参考下。">
+<meta property="og:image" content="http://boxvv.com/images/JavaScript/php.png">
+<meta property="og:updated_time" content="2016-01-12T23:01:06.104Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PHP开发中四种查询返回结果分析">
+<meta name="twitter:description" content="PHP开发中四种查询返回结果分析,需要的朋友可以参考下。">
+<meta name="twitter:creator" content="@scripthome">
+
+    
+    <link rel="alternative" href="/atom.xml" title="惟妙惟肖" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="微笑•未来，盒子的技术笔记" title="微笑•未来，盒子的技术笔记"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="惟妙惟肖">惟妙惟肖</a></h1>
+				<h2 class="blog-motto">To dream and to build, To fail and to succeed.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/reading">阅读</a></li>
+					
+						<li><a href="/labs">实验室</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="http://zhannei.baidu.com/cse/search" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value= null ><input type="text" name="q" size="30" placeholder="搜索"><br>
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016-01-13/PHP-4-Query.html" title="PHP开发中四种查询返回结果分析" itemprop="url">PHP开发中四种查询返回结果分析</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Box" target="_blank" itemprop="author">Box</a>
+		
+  <p class="article-time">
+    <time datetime="2016-01-12T22:28:55.000Z" itemprop="datePublished"> 发表于 2016-01-13</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql_result()"><span class="toc-number">1.</span> <span class="toc-text">mysql_result()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql_fetch_row()"><span class="toc-number">2.</span> <span class="toc-text">mysql_fetch_row()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql_fetch_array()"><span class="toc-number">3.</span> <span class="toc-text">mysql_fetch_array()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql_fetch_object()"><span class="toc-number">4.</span> <span class="toc-text">mysql_fetch_object()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#综合比较"><span class="toc-number">5.</span> <span class="toc-text">综合比较</span></a></li></ol>
+		
+		</div>
+		
+		<p>PHP开发中四种查询返回结果分析,需要的朋友可以参考下。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
+<h4 id="mysql_result()">mysql_result()</h4><p>使用mysql_result()来获取数据</p>
+<p>代码如下:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$connection</span>=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"password"</span>); <span class="comment">//连接并选择数据库服务器</span></span><br><span class="line">mysql_select_db(<span class="string">"test"</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"insert into users(user_name)"</span>; <span class="comment">//在test数据库里插入一条数据</span></span><br><span class="line"><span class="variable">$query</span>.=<span class="string">"values('tuxiaohui')"</span>;</span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>);</span><br><span class="line"><span class="keyword">if</span>(!<span class="variable">$query</span>)</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"insert data failed!&lt;br&gt;"</span>;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"select * from users"</span>; <span class="comment">//查询数据</span></span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="variable">$rows_count</span>=<span class="number">0</span>;<span class="variable">$rows_count</span>&lt;<span class="number">7</span>;<span class="variable">$rows_count</span>++) <span class="comment">//用mysql_result获得数据并输出，mysql_result() 返回 MySQL 结果集中一个单元的内容。</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户ID："</span>.mysql_result(<span class="variable">$result</span>,<span class="variable">$rows_count</span>,<span class="string">"user_id"</span>).<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户名："</span>.mysql_result(<span class="variable">$result</span>,<span class="variable">$rows_count</span>,<span class="string">"user_name"</span>).<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="mysql_fetch_row()">mysql_fetch_row()</h4><p>使用mysql_fetch_row()来获取数据,以数组的形式返回查询结果</p>
+<p>代码如下:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$connection</span>=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"password"</span>); <span class="comment">//连接并选择数据库服务器</span></span><br><span class="line">mysql_select_db(<span class="string">"test"</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"select * from users"</span>;</span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span>=mysql_fetch_row(<span class="variable">$result</span>))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户ID："</span>.<span class="variable">$row</span>[<span class="number">0</span>].<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户名："</span>.<span class="variable">$row</span>[<span class="number">1</span>].<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="mysql_fetch_array()">mysql_fetch_array()</h4><p>使用mysql_fetch_array()来获取数据,同mysql_fetch_row()类似，也是获取结果集中当前行数据，并在调用后自动滑向下一行</p>
+<p>代码如下:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$connection</span>=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"password"</span>); <span class="comment">//连接并选择数据库服务器</span></span><br><span class="line">mysql_select_db(<span class="string">"test"</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"select * from users"</span>;</span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span>=mysql_fetch_array(<span class="variable">$result</span>))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户ID："</span>.<span class="variable">$row</span>[<span class="number">0</span>].<span class="string">"&lt;br&gt;"</span>; <span class="comment">//也可以写做$row["user_id"]</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户名："</span>.<span class="variable">$row</span>[<span class="number">1</span>].<span class="string">"&lt;br&gt;"</span>; <span class="comment">//也可以写做$row["user_name"]</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="mysql_fetch_object()">mysql_fetch_object()</h4><p>使用mysql_fetch_object()以对象的形式返回查询结果，也是用于查询数据结果集，返回当前行数据，并自动滑向下一行，不同的是它返回的是一个对象，这个对象的属性集合即为数据的属性集合，而属性上的值则为数据库中当前行该属性上的值 </p>
+<p>代码如下:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$connection</span>=mysql_connect(<span class="string">"localhost"</span>,<span class="string">"root"</span>,<span class="string">"root"</span>); <span class="comment">//连接并选择数据库服务器</span></span><br><span class="line">mysql_select_db(<span class="string">"test"</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="variable">$query</span>=<span class="string">"select * from users"</span>;</span><br><span class="line"><span class="variable">$result</span>=mysql_query(<span class="variable">$query</span>,<span class="variable">$connection</span>);</span><br><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span>=mysql_fetch_object(<span class="variable">$result</span>))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户ID："</span>.<span class="variable">$row</span>-&gt;user_id.<span class="string">"&lt;br&gt;"</span>; <span class="comment">//通过对象运算符-&gt;获得改行数据在其属性上的值。</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"用户名："</span>.<span class="variable">$row</span>-&gt;user_name.<span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="综合比较">综合比较</h4><p>mysql_result()：优点在于使用方便；其缺点在于功能少，一次调用只能获取结果数据集中的一行元素，对较大型的数据库效率较低；</p>
+<p>mysql_fetch_row()：优点在于执行效率在4种方法中最高；不足在于只能用数字作为属性索引来获得属性值，在使用时非常容易出现混淆；</p>
+<p>mysql_fetch_array()：执行效率同样高，同mysql_fetch_row()相差无几，并界可以用属性名方式直接获得属性值，因此在实际应用中最常用；</p>
+<p>mysql_fetch_object()：采用了面向对象思想，在设计思路上更为先进，如果习惯于用面向对象的思路来写程序，则会很自地选择它。其次，该方法的优点还体现在，对于结构较为负责的数据结果，在逻辑上更为清晰。 </p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/程序人生/">程序人生</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/PHP/">PHP</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"5752038205"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+2071826" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016-01-13/javascript-decode.html" title="js获取url中的中文参数出现乱码">
+  <strong>上一篇：</strong><br/>
+  <span>
+  js获取url中的中文参数出现乱码</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016-01-13/Mysql-Like.html"  title="MySQL数据库like查询中文出现不准确的解决方法">
+ <strong>下一篇：</strong><br/> 
+ <span>MySQL数据库like查询中文出现不准确的解决方法
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016-01-13/PHP-4-Query.html" data-title="PHP开发中四种查询返回结果分析" data-url="http://boxvv.com/2016-01-13/PHP-4-Query.html"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql_result()"><span class="toc-number">1.</span> <span class="toc-text">mysql_result()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql_fetch_row()"><span class="toc-number">2.</span> <span class="toc-text">mysql_fetch_row()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql_fetch_array()"><span class="toc-number">3.</span> <span class="toc-text">mysql_fetch_array()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mysql_fetch_object()"><span class="toc-number">4.</span> <span class="toc-text">mysql_fetch_object()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#综合比较"><span class="toc-number">5.</span> <span class="toc-text">综合比较</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">4</span></li></ul>
+  </div>
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/JAVA开发/" title="JAVA开发">JAVA开发<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/技术文章/" title="技术文章">技术文章<sup>12</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/操作系统/" title="操作系统">操作系统<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/生活感悟/" title="生活感悟">生活感悟<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/程序人生/" title="程序人生">程序人生<sup>13</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/脚本开发/" title="脚本开发">脚本开发<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/行业资讯/" title="行业资讯">行业资讯<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/Apache/" style="font-size: 10px;">Apache</a> <a href="/tags/Apple/" style="font-size: 10px;">Apple</a> <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/Eclipse/" style="font-size: 10px;">Eclipse</a> <a href="/tags/HTML/" style="font-size: 15px;">HTML</a> <a href="/tags/JAVA/" style="font-size: 10px;">JAVA</a> <a href="/tags/JSON/" style="font-size: 12.5px;">JSON</a> <a href="/tags/JavaScript/" style="font-size: 17.5px;">JavaScript</a> <a href="/tags/Jobs/" style="font-size: 10px;">Jobs</a> <a href="/tags/MySQL/" style="font-size: 15px;">MySQL</a> <a href="/tags/PHP/" style="font-size: 20px;">PHP</a> <a href="/tags/Redhat/" style="font-size: 12.5px;">Redhat</a> <a href="/tags/SVN/" style="font-size: 10px;">SVN</a> <a href="/tags/Snow/" style="font-size: 10px;">Snow</a> <a href="/tags/Thinkings/" style="font-size: 12.5px;">Thinkings</a> <a href="/tags/autotest/" style="font-size: 12.5px;">autotest</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 17.5px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/pydev/" style="font-size: 10px;">pydev</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/五福/" style="font-size: 10px;">五福</a> <a href="/tags/兼容视图/" style="font-size: 10px;">兼容视图</a> <a href="/tags/励志/" style="font-size: 10px;">励志</a> <a href="/tags/支付宝/" style="font-size: 10px;">支付宝</a> <a href="/tags/红包/" style="font-size: 10px;">红包</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://www.csdn.net/" target="_blank" title="全球最大中文IT技术社区">CSDN</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.oschina.net/" target="_blank" title="找到您想要的开源项目">开源中国</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.w3school.com.cn/" target="_blank" title="全球最大的中文 Web 技术教程。">W3School在线教程</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=5752038205&verifier=0c0a43be&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">
+var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?move=0&amp;btn=r3.gif&amp;uid=2071826" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> If you love life, don&#39;t waste time, for time is what life is made up of.  <br/>
+			If you spend too much time thinking about a thing, you&#39;ll never get it done. </p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/5752038205" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		<a href="http://stackoverflow.com/users/scripthome" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		<a href="https://twitter.com/scripthome" target="_blank" class="icon-twitter" title="twitter"></a>
+		
+		
+		
+		<a href="https://www.linkedin.com/in/scripthome" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		
+		<a href="http://www.zhihu.com/people/scripthome" target="_blank" class="icon-zhihu" title="知乎"></a>
+		
+		
+		
+		<a href="mailto:scripthome@outlook.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+				<div class="cc-license">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank" title="本站所有作品采用：知识共享《署名非商业性使用 相同方式共享 3.0》进行许可">
+            <img src="/img/cc-by-nc-sa.svg" alt="Creative Commons" />
+          </a>
+		  
+		  <!-- Start of StatCounter Code for Blogger / Blogspot -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=10826846; 
+var sc_invisible=0; 
+var sc_security="4fd942e5"; 
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter_xhtml.js'></"+"script>");
+//]]>
+</script>
+<noscript><div class="statcounter"><a title="blogger hit counter" href="http://statcounter.com/blogger/" class="statcounter"><img class="statcounter" src="http://c.statcounter.com/10826846/0/4fd942e5/0/" alt="blogger hit counter" /></a></div></noscript>
+<!-- End of StatCounter Code for Blogger / Blogspot -->
+		  
+        </div>
+    
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme Rebuilt From Jacman by 
+		
+		<a href="/about" target="_blank" title="Box">Box</a>
+			© 2016 <a href="/sitemap.xml" target="_blank" title="SiteMap">SiteMap</a><br>
+		<script language="javascript" type="text/javascript" src="http://js.users.51.la/18687151.js"></script>
+<noscript><a href="http://www.51.la/?18687151" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/18687151.asp" style="border:none" /></a></noscript>
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1857228'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/stat.php%3Fid%3D1857228%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript" src="http://js.tongji.linezing.com/1253798/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/1253798/tongji.gif"/></a></noscript>
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"autotest"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
