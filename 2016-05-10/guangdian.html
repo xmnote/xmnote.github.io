@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>php解析http获取的json字符串变量总是空白null | 惟妙惟肖</title>
+    <title>中国广电成第四大运营商？ 仍面临三大悬念 | 惟妙惟肖</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Box">
     
 
     
-    <meta name="description" content="通过http接口获取的json字符串使用json_decode始终无法正确解析，返回空白。">
+    <meta name="description" content="中国广电的加入，会对目前的运营商市场造成什么影响？既然是被冠以“第四大运营商”的名号，首先，自然是消费者最为关心的问题，即目前的资费会不会下调？其次，就是对于目前中国运营商市场来说，垄断会不会被打破？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="php解析http获取的json字符串变量总是空白null">
-<meta property="og:url" content="http://boxvv.com/2016-02-25/PHP-JSON.html">
+<meta property="og:title" content="中国广电成第四大运营商？ 仍面临三大悬念">
+<meta property="og:url" content="http://boxvv.com/2016-05-10/guangdian.html">
 <meta property="og:site_name" content="惟妙惟肖">
-<meta property="og:description" content="通过http接口获取的json字符串使用json_decode始终无法正确解析，返回空白。">
-<meta property="og:image" content="http://boxvv.com/images/JavaScript/php.png">
-<meta property="og:updated_time" content="2016-02-25T15:42:21.251Z">
+<meta property="og:description" content="中国广电的加入，会对目前的运营商市场造成什么影响？既然是被冠以“第四大运营商”的名号，首先，自然是消费者最为关心的问题，即目前的资费会不会下调？其次，就是对于目前中国运营商市场来说，垄断会不会被打破？">
+<meta property="og:image" content="http://boxvv.com/images/JavaScript/ship_256.png">
+<meta property="og:updated_time" content="2016-05-10T15:14:56.183Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php解析http获取的json字符串变量总是空白null">
-<meta name="twitter:description" content="通过http接口获取的json字符串使用json_decode始终无法正确解析，返回空白。">
+<meta name="twitter:title" content="中国广电成第四大运营商？ 仍面临三大悬念">
+<meta name="twitter:description" content="中国广电的加入，会对目前的运营商市场造成什么影响？既然是被冠以“第四大运营商”的名号，首先，自然是消费者最为关心的问题，即目前的资费会不会下调？其次，就是对于目前中国运营商市场来说，垄断会不会被打破？">
 <meta name="twitter:creator" content="@scripthome">
 
     
@@ -89,14 +89,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016-02-25/PHP-JSON.html" title="php解析http获取的json字符串变量总是空白null" itemprop="url">php解析http获取的json字符串变量总是空白null</a>
+      <a href="/2016-05-10/guangdian.html" title="中国广电成第四大运营商？ 仍面临三大悬念" itemprop="url">中国广电成第四大运营商？ 仍面临三大悬念</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Box" target="_blank" itemprop="author">Box</a>
 		
   <p class="article-time">
-    <time datetime="2016-02-25T15:35:37.000Z" itemprop="datePublished"> 发表于 2016-02-25</time>
+    <time datetime="2016-05-10T15:13:20.000Z" itemprop="datePublished"> 发表于 2016-05-10</time>
     
   </p>
 </header>
@@ -105,16 +105,32 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一种解决办法"><span class="toc-number">1.</span> <span class="toc-text">第一种解决办法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二种解决办法"><span class="toc-number">2.</span> <span class="toc-text">第二种解决办法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三种解决办法"><span class="toc-number">3.</span> <span class="toc-text">第三种解决办法</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#资费下降？悬"><span class="toc-number">1.</span> <span class="toc-text">资费下降？悬</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打破三大运营商垄断，推进三网融合？悬"><span class="toc-number">2.</span> <span class="toc-text">打破三大运营商垄断，推进三网融合？悬</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#行业竞争加剧？悬"><span class="toc-number">3.</span> <span class="toc-text">行业竞争加剧？悬</span></a></li></ol>
 		
 		</div>
 		
-		<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
-<p>直接把结果字符串复制出来手动创建一个变量却正常，在前端js也能解析，搞了半天不得其解，借助强大的谷歌解决了问题，答案是接口吐出的结果包含有BOM头。</p>
-<p>有3种解决办法：</p>
-<h3 id="第一种解决办法">第一种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"UTF-8"</span>,<span class="string">"GBK//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"GBK"</span>,<span class="string">"UTF-8//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br></pre></td></tr></table></figure>
-<h3 id="第二种解决办法">第二种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = trim(<span class="variable">$result</span>, <span class="string">"\xEF\xBB\xBF"</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br><span class="line"><span class="keyword">exit</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="第三种解决办法">第三种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (substr(<span class="variable">$return</span>, <span class="number">0</span>,<span class="number">3</span>) == pack(<span class="string">"CCC"</span>,<span class="number">0xef</span>,<span class="number">0xbb</span>,<span class="number">0xbf</span>)) &#123;</span><br><span class="line">  <span class="variable">$return</span> = substr(<span class="variable">$return</span>, <span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$data</span> = json_decode(<span class="variable">$return</span>,<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
+		<p>中国广电的加入，会对目前的运营商市场造成什么影响？既然是被冠以“第四大运营商”的名号，首先，自然是消费者最为关心的问题，即目前的资费会不会下调？其次，就是对于目前中国运营商市场来说，垄断会不会被打破？<img src="/images/JavaScript/ship_256.png" class="img-logo"><a id="more"></a></p>
+<p>很长一段时间里，中国移动、中国联通以及中国电信霸占着中国的电信运营商市场。但是现在，中国广电公司加入了中国电信运营商市场，或许会成为真正意义上的“第四大基础电信运营商”。中国广电的加入，会对目前的运营商市场造成什么影响？既然是被冠以“第四大运营商”的名号，首先，自然是消费者最为关心的问题，即目前的资费会不会下调？其次，就是对于目前中国运营商市场来说，垄断会不会被打破？最后，会不会加剧目前中国运营商市场的竞争局面？</p>
+<p>但是就目前来看，这三方面仍然是中国广电面临的“三大悬念”。</p>
+<h3 id="资费下降？悬">资费下降？悬</h3><p>第一个问题是，随着中国广电的加入，目前运营商的电信资费和宽带资费能否下降？在看这个问题之前我们还是先来看一下中国广电申请的业务范围都有什么。2016年3月7日，中国广电向工信部申请在全国范围内经营互联网国内数据传送业务、国内通信设施服务业务，工信部也向中国广电颁发了《基础电信业务经营许可证》。虽然中国广电拿到了互联网国内数据传送业务、国内通信设施服务业务两个许可，但需要注意的是，中国广电并没有申请无线通信业务运营资质，而只有拿到了无线通信业务运营资质才可以推出无线通信业务。也即，目前的中国广电只能经营宽带业务以及提供建设服务，并不会涉及到移动通信业务领域。</p>
+<p>因此，中国广电此次介入进入并不会被目前的无线通信业务领域也即移动业务资费造成影响。那么，中国广电对目前的宽带业务格局又会造成多大影响？</p>
+<p>目前国内的固网宽带市场，可以说的移动电信联通的天下。另外， 2014年，工业和信息化部就已经决定鼓励民间资本以多种模式进入宽带接入市场，目前中国已经有上百家民营企业获得了相关牌照，这个市场竞争也已经很激烈。</p>
+<p>其实在没有获得互联网国内数据传送业务许可之前，有不少广电网络的运营商就已经涉足宽带业务市场，他们采用的是依靠有线电视的线路来提供宽带的方式，这样的优点是资费比电信以及联通的资费低，但是，因为受于线路的影响，传输速度却大打折扣。因此直到现在，广电的宽带的市场份额与三大运营商相比相差太多。</p>
+<p>中国移动、中国联通、中国电信的网络三方合作出资设立了铁塔公司，其“主营铁塔的建设、维护和运营，兼营基站机房、电源、空调等配套设施，及室内分布系统的建设、维护和运营以及基站设备的代维”。目前，移动联通电信的固网宽带业务都需要支付给铁塔公司租赁费用，享用铁塔公司的运营和维护的服务。</p>
+<p>此次中国广电介入固网宽带会不会采用与目前的三大运营商相同的方式，即租用铁塔公司的方式来进行？按照之前的模式，中国广电走这条道路的可能性比较小。第一是因为中国广电有着自身的优势，那就是已有的有线电视线路，第二，中国广电与三大运营商相比，资金力量是在是有限，如果采取与其正面竞争的形式，恐怕是凶多吉少。</p>
+<p>因此，在三大运营商之间的竞争本就已经很激烈的情况下，中国广电的介入要想对目前的固有宽带资费造成影响恐怕很难。</p>
+<h3 id="打破三大运营商垄断，推进三网融合？悬">打破三大运营商垄断，推进三网融合？悬</h3><p>目前中国的电信市场，一定程度上讲就是三大运营商的市场。处于体制内的三大运营商有着先天的优势，整个中国市场的巨大利润也几乎全部由三大运营商瓜分。也正因为如此，民营资本想要进入这个市场基本不可能。因此，虽然一直有着降费提速的声音存在，但是却一直没能成为现实。</p>
+<p>因此此次中国广电获得《基础电信业务经营许可证》便立刻被认为是继三大运营商之后的第四大运营商。但是，就目前中国广电的经营范围来看，至少对于移动通讯不会造成影响，而在短期内也很难对固网宽带造成改变。</p>
+<p>2015年9月份，国务院印发了《三网融合推广方案》，表示三网融合试点阶段结束将全面推广，广电、电信业务双向进入扩大到全国范围。其实，2010年开，三网融合就已经开始，但是融合的脚步一直因为运营商利益纠葛并没有实现更多实质性的进展。因此，此次中国广电涉足固网宽带被认为可以推动三网融合尽快向前发展。</p>
+<p>不过，这还要看中国广电对于三网融合的态度，即中国广电到底愿不愿意。联系近期广电的一系列表现，例如：叫停互联网盒子，要求视频网站下架TV端App，视频网站电视App下架，还有中国电信悦me盒子也被多家电视台“叫停”，可以看出，虽然现在中国广电拿到了基础电信业务经营许可证，但是想要中国广电推进三网融合似乎也很难。</p>
+<p>因此，无论是打破垄断还是推进三网融合都很悬。</p>
+<h3 id="行业竞争加剧？悬">行业竞争加剧？悬</h3><p>虽然如此，但是中国广电的介入会不会依靠自身的资费优势与三大运营商形成竞争？或者说会不会推进运营商之间的竞争？</p>
+<p>都说三大运营商之间的竞争激烈，但这种掺杂了体制因素的竞争其实并不充分。国有企业的身份决定了三大运营商的竞争局限性，因为其做出决策时不能完全出于利润来考虑。因此，竞争了这么久，却落了个三分天下的局面，竞争了这么久，降费提速却遥遥无期。再加上民间资本准入门槛过高，想要形成完全放开的竞争可以说是难上加难。</p>
+<p>例如美国市场，AT＆T、Verizon、T-Mobile和Sprint是美国四大电信运营商，Verizon公司是美国最大的无线运营商，AT＆T排名第二，另两家则小的多。T-Mobile通过不断降低套餐价格，优化客户签约手机以及采用新的技术服务的方式来提高用户数量，给前两大无线运营商造成了很大的威胁，因此加剧了运营商之间的竞争。</p>
+<p>但是，这样的局面恐怕很难在中国市场出现，即使是中国广电进入到这个行业以后，恐怕也很难对目前的竞争局面产生影响。虽然广电行业积累了数亿电视用户，但是这并不能成为广电发展宽带用户决定性因素。这与中国广电自身的技术短板有着很大的关系，目前的三大运营商已经跑在前面太远，再加上中国电信业准入门槛过高，广电想要进行光改，需要很多资金，目前广电的资金并不足以支撑这项改革。因此，中国广电的加入段时间内并不会加剧目前运营商行业的竞争。</p>
+<p>由此看来，对于中国广电进入中国电信运营商市场，不应看的过于乐观。</p>
+<p><strong>版权声明</strong></p>
+<p>本文转自<a href="http://wumaolin.baijia.baidu.com/article/443839" target="_blank" rel="external">网络</a>。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -122,13 +138,13 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/程序人生/">程序人生</a>
+  <a class="article-category-link" href="/categories/行业资讯/">行业资讯</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/JSON/">JSON</a><a href="/tags/PHP/">PHP</a>
+  <span></span> <a href="/tags/运营商/">运营商</a>
   </div>
 
 </div>
@@ -173,19 +189,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016-02-25/PHP-JSON-EX.html" title="JSON 字符串 对象 互转">
-  <strong>上一篇：</strong><br/>
-  <span>
-  JSON 字符串 对象 互转</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016-02-25/Html-IE-Compatible.html"  title="强制不使用“兼容性视图”的HTML代码">
+<a href="/2016-03-11/Python-Eclipse-pydev.html"  title="python+Eclipse+pydev环境搭建">
  <strong>下一篇：</strong><br/> 
- <span>强制不使用“兼容性视图”的HTML代码
+ <span>python+Eclipse+pydev环境搭建
 </span>
 </a>
 </div>
@@ -194,7 +202,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016-02-25/PHP-JSON.html" data-title="php解析http获取的json字符串变量总是空白null" data-url="http://boxvv.com/2016-02-25/PHP-JSON.html"></div>
+	<div class="ds-thread" data-thread-key="2016-05-10/guangdian.html" data-title="中国广电成第四大运营商？ 仍面临三大悬念" data-url="http://boxvv.com/2016-05-10/guangdian.html"></div>
 </section>
 
 
@@ -204,7 +212,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一种解决办法"><span class="toc-number">1.</span> <span class="toc-text">第一种解决办法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二种解决办法"><span class="toc-number">2.</span> <span class="toc-text">第二种解决办法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三种解决办法"><span class="toc-number">3.</span> <span class="toc-text">第三种解决办法</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#资费下降？悬"><span class="toc-number">1.</span> <span class="toc-text">资费下降？悬</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打破三大运营商垄断，推进三网融合？悬"><span class="toc-number">2.</span> <span class="toc-text">打破三大运营商垄断，推进三网融合？悬</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#行业竞争加剧？悬"><span class="toc-number">3.</span> <span class="toc-text">行业竞争加剧？悬</span></a></li></ol>
  
   </div>
 
