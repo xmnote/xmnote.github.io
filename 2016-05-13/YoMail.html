@@ -4,24 +4,31 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>redhat linux ftp开启及root登录 | 惟妙惟肖</title>
+    <title>YoMail+ Worktile, 让办公协作更简单 | 惟妙惟肖</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Box">
     
 
     
-    <meta name="description" content="新安装的红帽子系统，开启FTP服务后，登陆的时候却被拒绝。今天就遇到这样的问题。本文介绍的就是这个问题的解决方案…希望能帮到大家。">
+    <meta name="description" content="有了微信等即时通讯工具，大家是否还需要电子邮件？这是近年来很多IT专业人士一直争论的话题。但最后，不管是微信、还是 Slack，都没有能够“淘汰”电子邮件，这里面有很多原因：电子邮件更为开放，无需加好友就可以联系任务人；用电子邮件交待任务非常简便，一句话就可以分配任务了。电子邮件给予办公用户的“自由”恐怕是其他办公系统目前还做不到的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="redhat linux ftp开启及root登录">
-<meta property="og:url" content="http://boxvv.com/2015-12-08/RedHat.html">
+<meta property="og:title" content="YoMail+ Worktile, 让办公协作更简单">
+<meta property="og:url" content="http://boxvv.com/2016-05-13/YoMail.html">
 <meta property="og:site_name" content="惟妙惟肖">
-<meta property="og:description" content="新安装的红帽子系统，开启FTP服务后，登陆的时候却被拒绝。今天就遇到这样的问题。本文介绍的就是这个问题的解决方案…希望能帮到大家。">
-<meta property="og:image" content="http://boxvv.com/images/OS/redhat.jpg">
-<meta property="og:updated_time" content="2015-12-16T14:13:30.868Z">
+<meta property="og:description" content="有了微信等即时通讯工具，大家是否还需要电子邮件？这是近年来很多IT专业人士一直争论的话题。但最后，不管是微信、还是 Slack，都没有能够“淘汰”电子邮件，这里面有很多原因：电子邮件更为开放，无需加好友就可以联系任务人；用电子邮件交待任务非常简便，一句话就可以分配任务了。电子邮件给予办公用户的“自由”恐怕是其他办公系统目前还做不到的。">
+<meta property="og:image" content="http://boxvv.com/images/Other/Yomail-logo.png">
+<meta property="og:image" content="http://www.yomail.com/blog/wp-content/uploads/2016/05/yomailworktile%E5%90%88%E4%BD%9C%E5%AE%A3%E4%BC%A0%E5%9B%BE.png">
+<meta property="og:image" content="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E5%AE%89%E8%A3%85Worktile.png">
+<meta property="og:image" content="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E5%88%9B%E5%BB%BA%E4%BB%BB%E5%8A%A1.png">
+<meta property="og:image" content="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E5%86%85%E5%B5%8CWorktile%E5%BE%AE%E5%BA%94%E7%94%A8.png">
+<meta property="og:image" content="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E9%82%AE%E4%BB%B6%E7%9A%84%E5%AF%B9%E8%AF%9D.png">
+<meta property="og:image" content="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E9%82%AE%E4%BB%B6%E7%BF%BB%E8%AF%91.jpg">
+<meta property="og:image" content="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E9%82%AE%E4%BB%B6%E7%BB%9F%E8%AE%A1.png">
+<meta property="og:updated_time" content="2016-05-13T13:53:25.855Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="redhat linux ftp开启及root登录">
-<meta name="twitter:description" content="新安装的红帽子系统，开启FTP服务后，登陆的时候却被拒绝。今天就遇到这样的问题。本文介绍的就是这个问题的解决方案…希望能帮到大家。">
+<meta name="twitter:title" content="YoMail+ Worktile, 让办公协作更简单">
+<meta name="twitter:description" content="有了微信等即时通讯工具，大家是否还需要电子邮件？这是近年来很多IT专业人士一直争论的话题。但最后，不管是微信、还是 Slack，都没有能够“淘汰”电子邮件，这里面有很多原因：电子邮件更为开放，无需加好友就可以联系任务人；用电子邮件交待任务非常简便，一句话就可以分配任务了。电子邮件给予办公用户的“自由”恐怕是其他办公系统目前还做不到的。">
 <meta name="twitter:creator" content="@scripthome">
 
     
@@ -89,14 +96,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015-12-08/RedHat.html" title="redhat linux ftp开启及root登录" itemprop="url">redhat linux ftp开启及root登录</a>
+      <a href="/2016-05-13/YoMail.html" title="YoMail+ Worktile, 让办公协作更简单" itemprop="url">YoMail+ Worktile, 让办公协作更简单</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Box" target="_blank" itemprop="author">Box</a>
 		
   <p class="article-time">
-    <time datetime="2015-12-08T13:44:32.000Z" itemprop="datePublished"> 发表于 2015-12-08</time>
+    <time datetime="2016-05-13T13:49:50.000Z" itemprop="datePublished"> 发表于 2016-05-13</time>
     
   </p>
 </header>
@@ -105,16 +112,35 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#查看系统有没有安装vsftpd"><span class="toc-number">1.</span> <span class="toc-text">查看系统有没有安装vsftpd</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#root无法登录？"><span class="toc-number">2.</span> <span class="toc-text">root无法登录？</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#YoMail_+_Worktile"><span class="toc-number">1.</span> <span class="toc-text">YoMail + Worktile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何通过YoMail创建Worktile任务"><span class="toc-number">2.</span> <span class="toc-text">如何通过YoMail创建Worktile任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YoMail_不只是一款好用的邮件应用"><span class="toc-number">3.</span> <span class="toc-text">YoMail 不只是一款好用的邮件应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一键翻译全球语言"><span class="toc-number">3.1.</span> <span class="toc-text">一键翻译全球语言</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#邮件统计"><span class="toc-number">3.2.</span> <span class="toc-text">邮件统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#YoMail_微应用中心，用Email连接办公效率工具"><span class="toc-number">3.3.</span> <span class="toc-text">YoMail 微应用中心，用Email连接办公效率工具</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<p>新安装的红帽子系统，开启FTP服务后，登陆的时候却被拒绝。今天就遇到这样的问题。本文介绍的就是这个问题的解决方案…希望能帮到大家。<img src="/images/OS/redhat.jpg" class="img-logo"><a id="more"></a></p>
-<h3 id="查看系统有没有安装vsftpd">查看系统有没有安装vsftpd</h3><p>如果没有就先安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh vsftpd*****.rpm</span><br><span class="line">service vsftpd start</span><br></pre></td></tr></table></figure></p>
-<h3 id="root无法登录？">root无法登录？</h3><p>方法：修改以下文件值。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#用NO替换YES</span></span><br><span class="line">/etc/vsftpd/vsftpd.conf</span><br><span class="line">userlist_<span class="built_in">enable</span>=YES</span><br></pre></td></tr></table></figure></p>
-<p>将以下文件中的root注销. 行首加#<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/vsftpd/ftpusers</span><br></pre></td></tr></table></figure></p>
-<p>重启FTP<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service vsftpd restart</span><br></pre></td></tr></table></figure></p>
-<p>root可以登录了，问题解决。</p>
+		<p>有了微信等即时通讯工具，大家是否还需要电子邮件？这是近年来很多IT专业人士一直争论的话题。但最后，不管是微信、还是 Slack，都没有能够“淘汰”电子邮件，这里面有很多原因：电子邮件更为开放，无需加好友就可以联系任务人；用电子邮件交待任务非常简便，一句话就可以分配任务了。电子邮件给予办公用户的“自由”恐怕是其他办公系统目前还做不到的。<img src="/images/Other/Yomail-logo.png" class="img-logo"><a id="more"></a></p>
+<p>办公白领上班第一件事就是打开邮箱看看今天该做些什么，这实际上是因为电子邮件的收件箱是一个天然的收集工作任务的地方。但是，电子邮件的中的任务信息的结构化程弱于专业的任务管理系统，所以单纯通过电子邮件管理任务非常低效。YC 创始人保罗也曾说过：“我的收件箱是个任务列表，但确是个糟糕的任务列表”。</p>
+<h3 id="YoMail_+_Worktile">YoMail + Worktile</h3><p><img src="http://www.yomail.com/blog/wp-content/uploads/2016/05/yomailworktile%E5%90%88%E4%BD%9C%E5%AE%A3%E4%BC%A0%E5%9B%BE.png" alt=""> </p>
+<p>YoMail 的产品总监Nick讲述了这样一个经历：“我有个朋友是汽车制造领域的，他经常需要和国外的客户用电子邮件谈业务。另外，为了更好地跟踪业务，他的公司购买了一套任务管理系统。他说在使用电子邮件方面最大的问题就是如何有效地跟踪这些邮件中的业务? 如果有个系统可以帮助他把电子邮件发到他公司的任务管理系统中，并且创建为一个可追踪的任务，那门他愿意为这个系统付费”。</p>
+<p>这给了 Nick 两点启发：1、在任务管理方面，电子邮件不如专业任务管理系统高效；2、把含有任务的电子邮件同步（发送）到任务管理系统是一个能解决问题的用户需求。随后，就是现在大家看到的YoMail + Worktile 产品整合。电子邮件用户可以通过 YoMail 一键将任务创建为 Worktile 任务。</p>
+<p>YoMail和 Worktile 的深度产品整合，对YoMail来说弥补了电子邮件管理任务效率不高的问题；而对于Worktile来说，解决了 Worktile不善于外部沟通的不足。很明显，这是1+1&gt;2 的合作。</p>
+<h3 id="如何通过YoMail创建Worktile任务">如何通过YoMail创建Worktile任务</h3><p>首先，如果你还没有 YoMail, 你可以到YoMail官网(<a href="http://www.yomail.com" target="_blank" rel="external">http://www.yomail.com</a>) 下载并安装 YoMail。目前只有Windows 版，Mac，iOS，Android版再接下来几个月会陆续发布。</p>
+<p>接下来，在 YoMail 工具栏进入微应用中心，然后点击安装让工作更简单的 Worktile。</p>
+<p><img src="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E5%AE%89%E8%A3%85Worktile.png" alt="安装Worktile"></p>
+<p>然后在阅读邮件的界面上（回复按钮左侧）发现 Worktile 的图标，点击后弹出Worktile任务创建界面，邮件标题和正文会自动拷贝至任务名称和任务描述。此后选择项目、任务列表，甚至还可以将任务指派给小伙伴。点击“添加任务”就完成了任务添加的过程。</p>
+<p><img src="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E5%88%9B%E5%BB%BA%E4%BB%BB%E5%8A%A1.png" alt="创建任务"></p>
+<p>最后，还可以在联系列表中，你会发现多了一个好友“Worktile”，点击后可访问、修改Worktile的项目、任务信息。</p>
+<p><img src="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E5%86%85%E5%B5%8CWorktile%E5%BE%AE%E5%BA%94%E7%94%A8.png" alt="内嵌Worktile微应用"></p>
+<p>整个过程，你会发现还一直停留在YoMail，这可以让用户集中精力处理当前的事务，而不会因为在不同的应用间频繁切换而损失专注力。</p>
+<h3 id="YoMail_不只是一款好用的邮件应用">YoMail 不只是一款好用的邮件应用</h3><p>YoMail 可支持 Gmail等市面上大多数邮箱服务，自2015年发布以来就广受关注和好评。特别是2015年下半年推出的邮件对话功能，36Kr、福布斯中文网等权威媒体都曾报道过。</p>
+<p><img src="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E9%82%AE%E4%BB%B6%E7%9A%84%E5%AF%B9%E8%AF%9D.png" alt="邮件的对话"></p>
+<p>YoMail 对电子邮件创新的目标是为了让电子邮件更好用，达到这个目标的基本思路是既然尊重传统、又大胆创新。</p>
+<p><strong>YoMail不强行改变电子邮件用户习惯</strong>，比如YoMail仍保留了收件箱、发件箱等办公用户都熟悉的邮箱标准入口，此外还支持日程管理、 超大附件等办公用户都需要的基本功能。使用 YoMail 基本上是0学习成本。</p>
+<p>作为一款技术见长的产品，YoMail不缺黑科技，“<strong>无需设置、一键登录</strong>”， “<strong>实时接收新邮件</strong>”，“<strong>1秒精准搜索10万封邮件</strong>” 这几条 YoMail官网的宣传语都是通过技术手段来实现的。此外，YoMail也不缺乏产品创新，YoMail添加了很多实用小功能，比如邮件翻译和邮件统计。</p>
+<h4 id="一键翻译全球语言">一键翻译全球语言</h4><p>邮件翻译是和外国业务伙伴打交道的用户最想要的实用功能，以前都要通过把邮件拷贝至翻译软件进行翻译，而且普通翻译软件一般只支持中英文翻译。而YoMail的翻译功能可以一键翻译全球人类语言（地球以外的语言目前不支持）。</p>
+<p><img src="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E9%82%AE%E4%BB%B6%E7%BF%BB%E8%AF%91.jpg" alt="邮件翻译"></p>
+<h4 id="邮件统计">邮件统计</h4><p>很多需要和客户打交道的用户会比较关心和客户之间的往来邮件，要支持保持一定频率的沟通对维持关系，进而获得商业机会是非常关键的。YoMail 邮箱客户端的邮件统计功能可以帮助用户统计和联系人的来往邮件数量，包括发送和接收的邮件，如果和某个大客户有很长时间没有沟通了，要赶紧补发邮件。</p>
+<p><img src="http://www.yomail.com/blog/wp-content/uploads/2016/05/%E9%82%AE%E4%BB%B6%E7%BB%9F%E8%AE%A1.png" alt="邮件统计"></p>
+<h4 id="YoMail_微应用中心，用Email连接办公效率工具">YoMail 微应用中心，用Email连接办公效率工具</h4><p>前面已经讲到了 办公达人能列出一堆耳熟能详的办公效率工具，但这些效率工具能否有效地和电子邮件系统连接，这在业界目前没有好的解决方案。YoMail围绕电子邮件场景，接入任务管理系统（Worktile）是战略性的一步，接下来会发生什么？就像YoMail微应用中心那句话，”更多应用，敬请期待…”。</p>
+<p>作者：<a href="http://www.yomail.com/blog/author/fengy/" target="_blank" rel="external">冯艳</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -122,13 +148,13 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/操作系统/">操作系统</a>
+  <a class="article-category-link" href="/categories/行业资讯/">行业资讯</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Redhat/">Redhat</a>
+  <span></span> <a href="/tags/YoMail/">YoMail</a><a href="/tags/worktile/">worktile</a>
   </div>
 
 </div>
@@ -173,19 +199,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015-12-26/ProgrammingLanguages.html" title="程序猿必须知道的编程语言发展史（信息图）">
-  <strong>上一篇：</strong><br/>
-  <span>
-  程序猿必须知道的编程语言发展史（信息图）</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015-12-06/wxPython.html"  title="wxpython介绍">
+<a href="/2016-05-10/guangdian.html"  title="中国广电成第四大运营商？ 仍面临三大悬念">
  <strong>下一篇：</strong><br/> 
- <span>wxpython介绍
+ <span>中国广电成第四大运营商？ 仍面临三大悬念
 </span>
 </a>
 </div>
@@ -194,7 +212,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015-12-08/RedHat.html" data-title="redhat linux ftp开启及root登录" data-url="http://boxvv.com/2015-12-08/RedHat.html"></div>
+	<div class="ds-thread" data-thread-key="2016-05-13/YoMail.html" data-title="YoMail+ Worktile, 让办公协作更简单" data-url="http://boxvv.com/2016-05-13/YoMail.html"></div>
 </section>
 
 
@@ -204,7 +222,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#查看系统有没有安装vsftpd"><span class="toc-number">1.</span> <span class="toc-text">查看系统有没有安装vsftpd</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#root无法登录？"><span class="toc-number">2.</span> <span class="toc-text">root无法登录？</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#YoMail_+_Worktile"><span class="toc-number">1.</span> <span class="toc-text">YoMail + Worktile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何通过YoMail创建Worktile任务"><span class="toc-number">2.</span> <span class="toc-text">如何通过YoMail创建Worktile任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#YoMail_不只是一款好用的邮件应用"><span class="toc-number">3.</span> <span class="toc-text">YoMail 不只是一款好用的邮件应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一键翻译全球语言"><span class="toc-number">3.1.</span> <span class="toc-text">一键翻译全球语言</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#邮件统计"><span class="toc-number">3.2.</span> <span class="toc-text">邮件统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#YoMail_微应用中心，用Email连接办公效率工具"><span class="toc-number">3.3.</span> <span class="toc-text">YoMail 微应用中心，用Email连接办公效率工具</span></a></li></ol></li></ol>
  
   </div>
 
