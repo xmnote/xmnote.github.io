@@ -5,7 +5,7 @@
   <subtitle><![CDATA[To dream and to build, To fail and to succeed.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://boxvv.com//"/>
-  <updated>2016-05-13T13:53:25.855Z</updated>
+  <updated>2016-06-01T14:24:47.514Z</updated>
   <id>http://boxvv.com//</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[探索性测试的18个总结]]></title>
+    <link href="http://boxvv.com/2016-06-01/Minjie.html"/>
+    <id>http://boxvv.com/2016-06-01/Minjie.html</id>
+    <published>2016-06-01T14:18:44.000Z</published>
+    <updated>2016-06-01T14:24:47.514Z</updated>
+    <content type="html"><![CDATA[<p>探索性测试(ET)的18个总结，来自网络。<img src="/images/ProgramLife/apple-multicolore.png" class="img-logo"><a id="more"></a></p>
+<p> 　1）探索性测试与脚本化测试的主要区别：1）探索性测试将更多更高的认知水平的工作放在测试执行，而脚本化测试则更关注测试设计；2）前者更强调测试活动的并行和相互反馈（学习、设计、执行与结果分析等），而后者的测试活动是相对串行的。</p>
+<p>　　2）脚本化测试的主要优点是：a）尽早发现缺陷；b）不同利益相关者参与评审；c）可重用性；d）测试覆盖率评估。</p>
+<p>　　3）脚本化测试强调测试的尽早介入，如尽早设计测试用例。但是测试人员越早设计测试用例，对测试对象的了解越少，对风险的了解也越少。测试人员对测试对象的了解是一个逐步的过程，脚本化测试需要更多的工作量以应对这个过程（需求的细化和变更等）。</p>
+<p>　　4）提供测试对象的质量信息是测试的一个主要目的。但是不同的人对质量的理解是不一样的，脚本化测试能预先定义所有利益相关者的质量要求吗？脚本化测试能预先定义不同缺陷的来源吗？回答是不能。而这正是探索性测试引入的一个初衷。</p>
+<p>　　5）测试对象的需求是不断变更的、不同开发人员会犯不同的错误、测试环境与组合也是不断变化的，通过脚本化测试很难及时跟踪这些问题，即使能也需要考虑时间与成本。探索性测试的及时反馈与不断修正是一个解决之道。</p>
+<p>　　6）“复现缺陷，并确定复现的具体步骤”、“下棋”、“刑侦现场”、“拼图游戏”等，其中的思维应该是探索性，还是脚本化？哪个效率更高？</p>
+<p>　　7）组织内引入探索性测试，需要测试人员掌握各种技术与方法、知识、技能与实践，并以此为支撑，不是每天喊着这个概念就可以成功实施的。这个理念也同样适用于敏捷开发与测试。车是好车，但是我们的路修好了吗？</p>
+<p>　　8）不管是文档化还是存在于测试人员的头脑中，好的测试设计是什么？好的测试设计应该是随着测试环境不断变化的（例如测试组合、测试环境），以不断扩大测试覆盖率，并将关注点放在高风险的区域。</p>
+<p>　　9）不同的测试对象和测试目标，需要不同的测试策略和测试技术，而这将得到不同的测试用例、不同的测试文档与不同的测试结果。</p>
+<p>　　10）探索性测试没有脚本化特点，并代表它是不做准备的，它也不是随机的，而是提供更多的选择。探索性测试同样需要设计各种支撑性的内容：测试数据、失效模式、模型等。没有测试计划文档，也不代表探索性测试是没有计划的。</p>
+<p>　　11）探索性测试如下象棋，其规则很简单。但是我们在欣赏象棋比赛的时候，不会说：“啊，下象棋的规则真精彩！”相反，我们关注的是隐含在这些规则下选手选择下一步如何走的技巧与技能，它的技术含量也不在其规则，而在选手的技巧与技能。规则简单，技巧复杂。</p>
+<p>　　12）探索性测试的学习、设计、执行与结果分析等测试活动是相对并行并且是相互支撑的，了解这个并不代表测试人员掌握了探索性测试。正如婴儿学会了爬，并不代表就懂得了走、跑与跳等运动技能。</p>
+<p>　　13）探索性测试过程中的一个重要挑战是如何设计测试用例（尽管不一定是脚本化的，也可能是在测试执行的时候进行测试设计），例如：从测试技术到测试用例、从失效模式到测试用例、从风险列表到测试用例、从测试思想到测试用例。</p>
+<p>　　14）从用户现场反馈了一个问题：他们在配置某个功能的时候，界面上打印了一些奇怪的信息，然后系统就重启了。此时测试人员更倾向于采用探索性测试，而面临的首要挑战就是“如何从失效模式设计测试用例”，以复现该问题。</p>
+<p>　　15）探索性测试本身不是一种技术，而是一种测试方式或者思维。那么，脚本化测试应该是什么呢？是技术？不是方式或者思维？</p>
+<p>　　16）什么使得测试活动具有探索性测试特点呢？答案在于测试人员的认知投入：测试人员如何应对持续变化的情况。</p>
+<p>　　17）探索性测试不一定会有测试用例文档的输出，这并不代表它没有测试设计。探索性测试的设计不是为了控制，而是为了指导你的测试。</p>
+<p>　　18）探索性测试更强调个人和交互，而不是过程和工具；更强调应对变化而不是遵循计划；更强调可工作的软件而不是可理解的文档；更强调相互合作而不是合同谈判；从这个层面而言，探索性测试是敏捷的。</p>
+<p>[文章来源]：<a href="http://www.skyqa.com/management/2012/0913/91.html" target="_blank" rel="external">专注于测试能力改进</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>探索性测试(ET)的18个总结，来自网络。<img src="/images/ProgramLife/apple-multicolore.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="ET" scheme="http://boxvv.com/tags/ET/"/>
+    
+      <category term="探索性测试" scheme="http://boxvv.com/tags/%E6%8E%A2%E7%B4%A2%E6%80%A7%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="行业资讯" scheme="http://boxvv.com/categories/%E8%A1%8C%E4%B8%9A%E8%B5%84%E8%AE%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[儿童节，祝童心未泯的我们节日快乐！]]></title>
+    <link href="http://boxvv.com/2016-06-01/80houdehuiyi.html"/>
+    <id>http://boxvv.com/2016-06-01/80houdehuiyi.html</id>
+    <published>2016-06-01T13:58:24.000Z</published>
+    <updated>2016-06-01T14:15:29.709Z</updated>
+    <content type="html"><![CDATA[<p>童年似暴风雨后的彩虹，五颜六色，绚丽无比；童年似晚霞后的余光，让人怀念；童年又似一杯浓浓的咖啡，有苦有甜，让人回味……<img src="/images/ProgramLife/avedesk.png" class="img-logo"><a id="more"></a></p>
+<embed src="http://music.163.com/style/swf/widget.swf?sid=28481105&type=2&auto=1&width=278&height=32" width="298" height="52" allownetworking="all">]]></content>
+    <summary type="html">
+    <![CDATA[<p>童年似暴风雨后的彩虹，五颜六色，绚丽无比；童年似晚霞后的余光，让人怀念；童年又似一杯浓浓的咖啡，有苦有甜，让人回味……<img src="/images/ProgramLife/avedesk.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="生活感悟" scheme="http://boxvv.com/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[YoMail+ Worktile, 让办公协作更简单]]></title>
@@ -235,32 +292,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[php解析http获取的json字符串变量总是空白null]]></title>
-    <link href="http://boxvv.com/2016-02-25/PHP-JSON.html"/>
-    <id>http://boxvv.com/2016-02-25/PHP-JSON.html</id>
-    <published>2016-02-25T15:35:37.000Z</published>
-    <updated>2016-02-25T15:42:21.251Z</updated>
-    <content type="html"><![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
-<p>直接把结果字符串复制出来手动创建一个变量却正常，在前端js也能解析，搞了半天不得其解，借助强大的谷歌解决了问题，答案是接口吐出的结果包含有BOM头。</p>
-<p>有3种解决办法：</p>
-<h3 id="第一种解决办法">第一种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"UTF-8"</span>,<span class="string">"GBK//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"GBK"</span>,<span class="string">"UTF-8//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br></pre></td></tr></table></figure>
-<h3 id="第二种解决办法">第二种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = trim(<span class="variable">$result</span>, <span class="string">"\xEF\xBB\xBF"</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br><span class="line"><span class="keyword">exit</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="第三种解决办法">第三种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (substr(<span class="variable">$return</span>, <span class="number">0</span>,<span class="number">3</span>) == pack(<span class="string">"CCC"</span>,<span class="number">0xef</span>,<span class="number">0xbb</span>,<span class="number">0xbf</span>)) &#123;</span><br><span class="line">  <span class="variable">$return</span> = substr(<span class="variable">$return</span>, <span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$data</span> = json_decode(<span class="variable">$return</span>,<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
-    
-    </summary>
-    
-      <category term="JSON" scheme="http://boxvv.com/tags/JSON/"/>
-    
-      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
-    
-      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[JSON 字符串 对象 互转]]></title>
     <link href="http://boxvv.com/2016-02-25/PHP-JSON-EX.html"/>
     <id>http://boxvv.com/2016-02-25/PHP-JSON-EX.html</id>
@@ -277,6 +308,32 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>json对象，json字符串，不注意的话，很容易忽视混淆。例举几个容易混的情况。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="JSON" scheme="http://boxvv.com/tags/JSON/"/>
+    
+      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
+    
+      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[php解析http获取的json字符串变量总是空白null]]></title>
+    <link href="http://boxvv.com/2016-02-25/PHP-JSON.html"/>
+    <id>http://boxvv.com/2016-02-25/PHP-JSON.html</id>
+    <published>2016-02-25T15:35:37.000Z</published>
+    <updated>2016-02-25T15:42:21.251Z</updated>
+    <content type="html"><![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
+<p>直接把结果字符串复制出来手动创建一个变量却正常，在前端js也能解析，搞了半天不得其解，借助强大的谷歌解决了问题，答案是接口吐出的结果包含有BOM头。</p>
+<p>有3种解决办法：</p>
+<h3 id="第一种解决办法">第一种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"UTF-8"</span>,<span class="string">"GBK//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"GBK"</span>,<span class="string">"UTF-8//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br></pre></td></tr></table></figure>
+<h3 id="第二种解决办法">第二种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = trim(<span class="variable">$result</span>, <span class="string">"\xEF\xBB\xBF"</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br><span class="line"><span class="keyword">exit</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="第三种解决办法">第三种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (substr(<span class="variable">$return</span>, <span class="number">0</span>,<span class="number">3</span>) == pack(<span class="string">"CCC"</span>,<span class="number">0xef</span>,<span class="number">0xbb</span>,<span class="number">0xbf</span>)) &#123;</span><br><span class="line">  <span class="variable">$return</span> = substr(<span class="variable">$return</span>, <span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$data</span> = json_decode(<span class="variable">$return</span>,<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
     
     </summary>
     
@@ -859,64 +916,6 @@
     </summary>
     
       <category term="autotest" scheme="http://boxvv.com/tags/autotest/"/>
-    
-      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[js获取url中的中文参数出现乱码]]></title>
-    <link href="http://boxvv.com/2016-01-13/javascript-decode.html"/>
-    <id>http://boxvv.com/2016-01-13/javascript-decode.html</id>
-    <published>2016-01-12T22:28:55.000Z</published>
-    <updated>2016-01-12T22:59:32.956Z</updated>
-    <content type="html"><![CDATA[<p>在js构造的url中，如果含有中文参数，则会出现乱码。本文分享下解决方法，供大家参考。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
-<h4 id="当在地址栏中传递参数时，服务器端获取的参数值为乱码。">当在地址栏中传递参数时，服务器端获取的参数值为乱码。</h4><p>解决：<br>1、使用JS将中文转为ASCII码<br>var param = encodeURI(“中文参数”);<br>备注：encodeURI该方法的目的是对 URI 进行完整的编码，因此对以下在 URI 中具有特殊含义的 ASCII 标点符号，encodeURI() 函数是不会进行转义的：;/?:@&amp;=+$,#</p>
-<p>代码示例:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="built_in">encodeURI</span>(<span class="string">"我是中文"</span>)); </span><br><span class="line">alert(<span class="built_in">decodeURI</span>(<span class="built_in">encodeURI</span>(<span class="string">"我是中文"</span>)));</span><br></pre></td></tr></table></figure>
-<h4 id="server端接收传递过来的参数">server端接收传递过来的参数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> param = request.getParamter(<span class="string">"param"</span>);</span><br></pre></td></tr></table></figure>
-<p>现在的内容param是乱码。</p>
-<h4 id="对接收的参数进行转码">对接收的参数进行转码</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Stringt newparam = <span class="keyword">new</span> <span class="built_in">String</span>(param.getByte(<span class="string">"iso-8859-1"</span>),<span class="string">"utf-8"</span>);</span><br></pre></td></tr></table></figure>
-<p>备注：接收的参数一定要以ISO-8859-1获取字节，然后根据网页的编码格式new一个新的字符串，这里使用的是utf-8编码</p>
-<h4 id="例子">例子</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRequest</span>(<span class="params"></span>) </span>&#123;   </span><br><span class="line">       <span class="keyword">var</span> url = <span class="built_in">window</span>.location.search; <span class="comment">//获取url中"?"符后的字串   </span></span><br><span class="line">       <span class="keyword">var</span> theRequest = <span class="keyword">new</span> <span class="built_in">Object</span>();   </span><br><span class="line">       <span class="keyword">if</span> (url.indexOf(<span class="string">"?"</span>) != -<span class="number">1</span>) &#123;   </span><br><span class="line">          <span class="keyword">var</span> str = url.substr(<span class="number">1</span>);   </span><br><span class="line">          strs = str.split(<span class="string">"&amp;"</span>);   </span><br><span class="line">          <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; strs.length; i ++) &#123;   </span><br><span class="line">              <span class="comment">//就是这句的问题</span></span><br><span class="line">             theRequest[strs[i].split(<span class="string">"="</span>)[<span class="number">0</span>]]=<span class="built_in">decodeURI</span>(strs[i].split(<span class="string">"="</span>)[<span class="number">1</span>]); </span><br><span class="line">          &#125;   </span><br><span class="line">       &#125;   </span><br><span class="line">       <span class="keyword">return</span> theRequest;   </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>在js构造的url中，如果含有中文参数，则会出现乱码。本文分享下解决方法，供大家参考。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
-    
-    </summary>
-    
-      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
-    
-      <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[PHP一键去除网页BOM属性 完美解决网页乱码等问题]]></title>
-    <link href="http://boxvv.com/2016-01-13/PHP-trim-BOM.html"/>
-    <id>http://boxvv.com/2016-01-13/PHP-trim-BOM.html</id>
-    <published>2016-01-12T22:28:55.000Z</published>
-    <updated>2016-01-12T22:47:59.152Z</updated>
-    <content type="html"><![CDATA[<p>在网站开发或者是前端开发中，有时候我们在小改动的情况下，习惯的使用windows系统自带的编辑器进行编辑，这就会导致页面出现bom签名（只针对utf8文件，gbk编码不会出现此问题）这个时候如何解决这个问题呢？<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
-<h4 id="问题现象">问题现象</h4><p>首先你要熟悉几个常出现的问题：</p>
-<p>1.网站打开空白</p>
-<p>2.页面头部出现多余的空白</p>
-<p>3.网站出现乱码，如“锘�”</p>
-<p>解决方法可以是：</p>
-<p>1.选用专业的编辑器，例如notepad++，sublime，editplus这样不会自动签名。</p>
-<p>2.sublime通过如下操作File -&gt; Save with Encoding -&gt; UTF-8保存后即可去除bom</p>
-<p>3.notepad++选中格式 -&gt; 以UTF-8格式编码 选项即可去除</p>
-<h4 id="解决办法">解决办法</h4><p>最近遇见了网页出现的乱码“锘�”，这个就是因为转码后多余出来的，仔细检测也并不是PHP文件的BOM属性，经过不断的摸索和发现，是整个网站中有些文件存在BOM属性，所以导致调用输出时就出现了“锘�”这样的乱码，由于网站程序的庞大，所以并不可能手动挨个检查排除修复，所以就发现了一个极为好用的PHP程序。</p>
-<p>下面就贴出整理的代码吧！</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//以下为代码正文…</span></span><br><span class="line"><span class="preprocessor">&lt;?php</span> </span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">'dir'</span>]))&#123; <span class="comment">//设置文件目录</span></span><br><span class="line"><span class="variable">$basedir</span>=<span class="variable">$_GET</span>[<span class="string">'dir'</span>]; </span><br><span class="line">&#125;<span class="keyword">else</span>&#123; </span><br><span class="line"><span class="variable">$basedir</span> = <span class="string">'.'</span>; </span><br><span class="line">&#125; </span><br><span class="line"><span class="variable">$auto</span> = <span class="number">1</span>; </span><br><span class="line">checkdir(<span class="variable">$basedir</span>); </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkdir</span><span class="params">(<span class="variable">$basedir</span>)</span></span>&#123; </span><br><span class="line"><span class="keyword">if</span> (<span class="variable">$dh</span> = opendir(<span class="variable">$basedir</span>)) &#123; </span><br><span class="line">  <span class="keyword">while</span> ((<span class="variable">$file</span> = readdir(<span class="variable">$dh</span>)) !== <span class="keyword">false</span>) &#123; </span><br><span class="line">   <span class="keyword">if</span> (<span class="variable">$file</span> != <span class="string">'.'</span> &amp;&amp; <span class="variable">$file</span> != <span class="string">'..'</span>)&#123; </span><br><span class="line">    <span class="keyword">if</span> (!is_dir(<span class="variable">$basedir</span>.<span class="string">"/"</span>.<span class="variable">$file</span>)) &#123; </span><br><span class="line">     <span class="keyword">echo</span> <span class="string">"filename: $basedir/$file "</span>.checkBOM(<span class="string">"$basedir/$file"</span>).<span class="string">" &lt;br&gt;"</span>; </span><br><span class="line">    &#125;<span class="keyword">else</span>&#123; </span><br><span class="line">     <span class="variable">$dirname</span> = <span class="variable">$basedir</span>.<span class="string">"/"</span>.<span class="variable">$file</span>; </span><br><span class="line">     checkdir(<span class="variable">$dirname</span>); </span><br><span class="line">    &#125; </span><br><span class="line">   &#125; </span><br><span class="line">  &#125; </span><br><span class="line">closedir(<span class="variable">$dh</span>); </span><br><span class="line">&#125; </span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkBOM</span> <span class="params">(<span class="variable">$filename</span>)</span> </span>&#123; </span><br><span class="line"><span class="keyword">global</span> <span class="variable">$auto</span>; </span><br><span class="line"><span class="variable">$contents</span> = file_get_contents(<span class="variable">$filename</span>); </span><br><span class="line"><span class="variable">$charset</span>[<span class="number">1</span>] = substr(<span class="variable">$contents</span>, <span class="number">0</span>, <span class="number">1</span>); </span><br><span class="line"><span class="variable">$charset</span>[<span class="number">2</span>] = substr(<span class="variable">$contents</span>, <span class="number">1</span>, <span class="number">1</span>); </span><br><span class="line"><span class="variable">$charset</span>[<span class="number">3</span>] = substr(<span class="variable">$contents</span>, <span class="number">2</span>, <span class="number">1</span>); </span><br><span class="line"><span class="keyword">if</span> (ord(<span class="variable">$charset</span>[<span class="number">1</span>]) == <span class="number">239</span> &amp;&amp; ord(<span class="variable">$charset</span>[<span class="number">2</span>]) == <span class="number">187</span> &amp;&amp; ord(<span class="variable">$charset</span>[<span class="number">3</span>]) == <span class="number">191</span>) &#123; </span><br><span class="line">  <span class="keyword">if</span> (<span class="variable">$auto</span> == <span class="number">1</span>) &#123; </span><br><span class="line">   <span class="variable">$rest</span> = substr(<span class="variable">$contents</span>, <span class="number">3</span>); </span><br><span class="line">   rewrite (<span class="variable">$filename</span>, <span class="variable">$rest</span>); </span><br><span class="line">   <span class="keyword">return</span> (<span class="string">"&lt;font color=red&gt;BOM found, automatically removed.&lt;/font&gt;"</span>); </span><br><span class="line">  &#125; <span class="keyword">else</span> &#123; </span><br><span class="line">   <span class="keyword">return</span> (<span class="string">"&lt;font color=red&gt;BOM found.&lt;/font&gt;"</span>); </span><br><span class="line">  &#125; </span><br><span class="line">&#125; </span><br><span class="line"><span class="keyword">else</span> <span class="keyword">return</span> (<span class="string">"BOM Not Found."</span>); </span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">rewrite</span> <span class="params">(<span class="variable">$filename</span>, <span class="variable">$data</span>)</span> </span>&#123; </span><br><span class="line"><span class="variable">$filenum</span> = fopen(<span class="variable">$filename</span>, <span class="string">"w"</span>); </span><br><span class="line">flock(<span class="variable">$filenum</span>, LOCK_EX); </span><br><span class="line">fwrite(<span class="variable">$filenum</span>, <span class="variable">$data</span>); </span><br><span class="line">fclose(<span class="variable">$filenum</span>); </span><br><span class="line">&#125; </span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
-<p>使用方法：复制上面代码到一个新建的delbom.txt的文件中，上传到网站根目录，然后将delbom.txt改为delbom.php，最后直接前台访问该文件即可。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>在网站开发或者是前端开发中，有时候我们在小改动的情况下，习惯的使用windows系统自带的编辑器进行编辑，这就会导致页面出现bom签名（只针对utf8文件，gbk编码不会出现此问题）这个时候如何解决这个问题呢？<img src="/images/JavaScript/php.png" class="img-logo" />]]>
-    
-    </summary>
-    
-      <category term="PHP" scheme="http://boxvv.com/tags/PHP/"/>
     
       <category term="程序人生" scheme="http://boxvv.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
     
