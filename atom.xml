@@ -5,7 +5,7 @@
   <subtitle><![CDATA[To dream and to build, To fail and to succeed.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://boxvv.com//"/>
-  <updated>2016-06-08T14:59:11.025Z</updated>
+  <updated>2016-06-08T15:09:14.976Z</updated>
   <id>http://boxvv.com//</id>
   
   <author>
@@ -20,8 +20,8 @@
     <link href="http://boxvv.com/2016-06-08/continuous-integration.html"/>
     <id>http://boxvv.com/2016-06-08/continuous-integration.html</id>
     <published>2016-06-08T14:57:16.000Z</published>
-    <updated>2016-06-08T14:59:11.025Z</updated>
-    <content type="html"><![CDATA[<p>互联网软件的开发和发布，已经形成了一套标准流程，最重要的组成部分就是持续集成（Continuous integration，简称CI）。<img src="/images/Other/Yomail-logo.png" class="img-logo"><a id="more"></a></p>
+    <updated>2016-06-08T15:09:14.976Z</updated>
+    <content type="html"><![CDATA[<p>互联网软件的开发和发布，已经形成了一套标准流程，最重要的组成部分就是持续集成（Continuous integration，简称CI）。<img src="/images/ProgramLife/rubiks-cube.png" class="img-logo"><a id="more"></a></p>
 <p>本文简要介绍持续集成的概念和做法。<br><img src="/images/Other/bg2015092301.png" alt=""></p>
 <h3 id="概念">概念</h3><p>持续集成指的是，频繁地（一天多次）将代码集成到主干。<br>它的好处主要有两个。</p>
 <ol>
@@ -63,7 +63,7 @@
 <p>第二轮是全面测试，单元测试和集成测试都会跑，有条件的话，也要做端对端测试。所有测试以自动化为主，少数无法自动化的测试用例，就要人工跑。</p>
 <p>需要强调的是，新版本的每一个更新点都必须测试到。如果测试的覆盖率不高，进入后面的部署阶段后，很可能会出现严重的问题。</p>
 <h4 id="部署">部署</h4><p>通过了第二轮测试，当前代码就是一个可以直接部署的版本（<code>artifact</code>）。将这个版本的所有文件打包（<code>tar filename.tar *</code>）存档，发到生产服务器。</p>
-<p>生产服务器将打包文件，解包成本地的一个目录，再将运行路径的符号链接（<code>symlink</code>）指向这个目录，然后重新启动应用。这方面的部署工具有<code>[Ansible](http://www.ansible.com/)</code>，<code>[Chef](https://www.chef.io/chef/)</code>，<code>[Puppet](https://puppetlabs.com/)</code>等。</p>
+<p>生产服务器将打包文件，解包成本地的一个目录，再将运行路径的符号链接（<code>symlink</code>）指向这个目录，然后重新启动应用。这方面的部署工具有<a href="http://www.ansible.com/" target="_blank" rel="external">Ansible</a>，<a href="https://www.chef.io/chef/" target="_blank" rel="external">Chef</a>，<a href="https://puppetlabs.com/" target="_blank" rel="external">Puppet</a>等。</p>
 <h4 id="回滚">回滚</h4><p>一旦当前版本发生问题，就要回滚到上一个版本的构建结果。最简单的做法就是修改一下符号链接，指向上一个版本的目录。</p>
 <h3 id="参考链接">参考链接</h3><ul>
 <li>Gergely Nemeth, <a href="https://blog.risingstack.com/continuous-deployment-of-node-js-applications/" target="_blank" rel="external">Continuous Deployment of Node.js Applications</a></li>
@@ -75,7 +75,7 @@
 <p><img src="http://ww3.sinaimg.cn/mw690/006hgXTLjw1f4o5hg1v11j308c08cq3n.jpg" alt=""></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>互联网软件的开发和发布，已经形成了一套标准流程，最重要的组成部分就是持续集成（Continuous integration，简称CI）。<img src="/images/Other/Yomail-logo.png" class="img-logo" />]]>
+    <![CDATA[<p>互联网软件的开发和发布，已经形成了一套标准流程，最重要的组成部分就是持续集成（Continuous integration，简称CI）。<img src="/images/ProgramLife/rubiks-cube.png" class="img-logo" />]]>
     
     </summary>
     
