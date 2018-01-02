@@ -778,32 +778,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[php解析http获取的json字符串变量总是空白null]]></title>
-    <link href="http://ishareflower.com/2016-02-25/PHP-JSON.html"/>
-    <id>http://ishareflower.com/2016-02-25/PHP-JSON.html</id>
-    <published>2016-02-25T15:35:37.000Z</published>
-    <updated>2016-02-25T15:42:21.251Z</updated>
-    <content type="html"><![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
-<p>直接把结果字符串复制出来手动创建一个变量却正常，在前端js也能解析，搞了半天不得其解，借助强大的谷歌解决了问题，答案是接口吐出的结果包含有BOM头。</p>
-<p>有3种解决办法：</p>
-<h3 id="第一种解决办法">第一种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"UTF-8"</span>,<span class="string">"GBK//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"GBK"</span>,<span class="string">"UTF-8//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br></pre></td></tr></table></figure>
-<h3 id="第二种解决办法">第二种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = trim(<span class="variable">$result</span>, <span class="string">"\xEF\xBB\xBF"</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br><span class="line"><span class="keyword">exit</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="第三种解决办法">第三种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (substr(<span class="variable">$return</span>, <span class="number">0</span>,<span class="number">3</span>) == pack(<span class="string">"CCC"</span>,<span class="number">0xef</span>,<span class="number">0xbb</span>,<span class="number">0xbf</span>)) &#123;</span><br><span class="line">  <span class="variable">$return</span> = substr(<span class="variable">$return</span>, <span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$data</span> = json_decode(<span class="variable">$return</span>,<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
-    
-    </summary>
-    
-      <category term="JSON" scheme="http://ishareflower.com/tags/JSON/"/>
-    
-      <category term="PHP" scheme="http://ishareflower.com/tags/PHP/"/>
-    
-      <category term="程序人生" scheme="http://ishareflower.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[JSON 字符串 对象 互转]]></title>
     <link href="http://ishareflower.com/2016-02-25/PHP-JSON-EX.html"/>
     <id>http://ishareflower.com/2016-02-25/PHP-JSON-EX.html</id>
@@ -820,6 +794,32 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>json对象，json字符串，不注意的话，很容易忽视混淆。例举几个容易混的情况。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
+    
+    </summary>
+    
+      <category term="JSON" scheme="http://ishareflower.com/tags/JSON/"/>
+    
+      <category term="PHP" scheme="http://ishareflower.com/tags/PHP/"/>
+    
+      <category term="程序人生" scheme="http://ishareflower.com/categories/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[php解析http获取的json字符串变量总是空白null]]></title>
+    <link href="http://ishareflower.com/2016-02-25/PHP-JSON.html"/>
+    <id>http://ishareflower.com/2016-02-25/PHP-JSON.html</id>
+    <published>2016-02-25T15:35:37.000Z</published>
+    <updated>2016-02-25T15:42:21.251Z</updated>
+    <content type="html"><![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo"><a id="more"></a></p>
+<p>直接把结果字符串复制出来手动创建一个变量却正常，在前端js也能解析，搞了半天不得其解，借助强大的谷歌解决了问题，答案是接口吐出的结果包含有BOM头。</p>
+<p>有3种解决办法：</p>
+<h3 id="第一种解决办法">第一种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"UTF-8"</span>,<span class="string">"GBK//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line"><span class="variable">$result</span> = @iconv(<span class="string">"GBK"</span>,<span class="string">"UTF-8//IGNORE"</span>,<span class="variable">$result</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br></pre></td></tr></table></figure>
+<h3 id="第二种解决办法">第二种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$result</span> = trim(<span class="variable">$result</span>, <span class="string">"\xEF\xBB\xBF"</span>);</span><br><span class="line">print_r(json_decode(<span class="variable">$result</span>, <span class="keyword">true</span>));</span><br><span class="line"><span class="keyword">exit</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="第三种解决办法">第三种解决办法</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (substr(<span class="variable">$return</span>, <span class="number">0</span>,<span class="number">3</span>) == pack(<span class="string">"CCC"</span>,<span class="number">0xef</span>,<span class="number">0xbb</span>,<span class="number">0xbf</span>)) &#123;</span><br><span class="line">  <span class="variable">$return</span> = substr(<span class="variable">$return</span>, <span class="number">3</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$data</span> = json_decode(<span class="variable">$return</span>,<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>通过http接口获取的json字符串使用<code>json_decode</code>始终无法正确解析，返回空白。<img src="/images/JavaScript/php.png" class="img-logo" />]]>
     
     </summary>
     
